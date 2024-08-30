@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import NavBar from './Nav';
-// import About from './About';
 import Projects from './Project';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -8,7 +7,7 @@ import a1 from '../assets/a10.jpg';
 import a2 from '../assets/a4.jpg';
 import Typewriter from 'typewriter-effect';
 
-export default function LandingPage() {
+export default function LandingPage1() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 250]); // Increased range for more effect
   const y2 = useTransform(scrollY, [0, 500], [0, 100]); // Increased range for more effect
@@ -75,16 +74,15 @@ export default function LandingPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-  GitHub
-</a>
-<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-  LinkedIn
-</a>
-<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-  Twitter
-</a>
-
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
         </motion.div>
 
         {/* Call-to-Action Button */}
@@ -101,7 +99,6 @@ export default function LandingPage() {
       </div>
 
       {/* Sections as Separate Components */}
-      {/* <About /> */}
       <Projects />
       <Skills />
       <Contact />
