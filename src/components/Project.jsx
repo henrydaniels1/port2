@@ -90,7 +90,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div ref={ sectionRef } className="py-16 space-y-16  w-[97%] lg:w-[95%] mx-auto">
+    <div ref={ sectionRef } id="projects" className="py-16 space-y-16  w-[97%] lg:w-[95%] mx-auto">
       <div> <p className='text-4xl font-bold text-center'>MY PROJECTS</p></div>
       <div className={`grid lg:grid-cols-3 sm:grid-cols-1 gap-8 transition-all duration-1000 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-12'}`}>
         {data.map((item, index) => (

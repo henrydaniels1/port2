@@ -1,7 +1,7 @@
 // Contact.jsx
 export default function Contact() {
   return (
-   <section className="p-6 dark:text-gray-800">
+   <section id="contact" className="p-6 dark:text-gray-800">
 	<form noValidate="" className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow dark:bg-gray-50">
 		<h2 className="w-full text-3xl font-bold leading-tight">Contact us</h2>
 		<div>
