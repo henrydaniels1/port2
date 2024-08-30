@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import a13 from '../assets/logo1.png'
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +11,18 @@ export default function NavBar() {
 
   return (
     <motion.nav 
-      className="fixed top-0 w-[97%] lg:w-[95%] mx-auto py-4 bg-transparent z-30 flex justify-between items-center"
+      className="fixed top-0 w-[97%]  lg:w-[95%] mx-auto py-4 bg-transparent z-30 flex justify-between items-center"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-2xl font-bold text-white">Ched</div>
+      <div className=""><img src={a13} className='w-16 h-16 scale-125'></img></div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
         <button 
           onClick={toggleMenu} 
-          className="text-white text-3xl focus:outline-none relative z-40"
+          className="text-gray-400 text-3xl focus:outline-none relative z-40"
         >
           {isOpen ? (
             <span className="inline-block text-3xl">&#x2715;</span> // Times icon
@@ -38,13 +39,13 @@ export default function NavBar() {
         } md:static md:bg-transparent md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end`}
       >
         <div className="w-full md:w-auto flex flex-col md:flex-row items-center md:items-center md:space-x-4">
-          <a
+          {/* <a
             href="#about"
             className="text-2xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             About
-          </a>
+          </a> */}
           <a
             href="#projects"
             className="text-2xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
