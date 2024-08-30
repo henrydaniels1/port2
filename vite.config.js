@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["react-icons/fa", "typewriter-effect"], // Add react-icons/fa and typewriter-effect to external
+      external: ["typewriter-effect"], // Add react-icons/fa and typewriter-effect to external
     },
   },
 })
