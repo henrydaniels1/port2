@@ -15,7 +15,7 @@ export default function NavBar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-2xl font-bold text-white">MyPortfolio</div>
+      <div className="text-2xl font-bold text-white">Ched</div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">

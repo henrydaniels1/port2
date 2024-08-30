@@ -20,7 +20,7 @@ export default function LandingPage1() {
       <div className="relative bg-blue-900 min-h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden">
         {/* Parallax Background Layers */}
         <motion.div 
-          className="absolute inset-0 bg-cover bg-center opacity-0"
+          className="absolute h-auto bg-cover max-w-full inset-1 bg-center opacity-10"
           style={{ 
             y: y1, 
             scale: scale1,
@@ -28,7 +28,7 @@ export default function LandingPage1() {
           }}
         />
         <motion.div 
-          className="absolute h-auto max-w-full inset-0 bg-cover bg-center opacity-1"
+          className="absolute h-auto max-w-full inset-0 bg-cover md:bg-center opacity-1"
           style={{ 
             y: y2, 
             scale: scale2,
