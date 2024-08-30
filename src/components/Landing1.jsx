@@ -44,7 +44,8 @@ export default function LandingPage1() {
           className="lg:text-6xl text-4xl font-bold mb-4 relative z-10"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+                  transition={ { duration: 1 } }
+                  
         >
           <Typewriter
             options={{
@@ -90,7 +91,12 @@ export default function LandingPage1() {
           className="relative z-10 mt-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
+                  transition={ { duration: 0.8, delay: 1.5 } }
+                   style={{ 
+            y: y1, 
+            scale: scale1,
+           
+          }}
         >
           <a href="#projects" className="bg-white text-blue-900 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 transition">
             View My Works
