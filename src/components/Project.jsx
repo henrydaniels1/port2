@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
+import a11 from '../assets/a11.png'
+import a12 from '../assets/a12.png'
 import { useEffect, useRef, useState } from 'react';
 
 const data = [
   {
-    imageUrl: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    imageUrl: a11,
     // author: "Andrea Felsted",
     date: "18 Aug 2024",
     title: "CRIPTIFY",
@@ -12,7 +14,7 @@ const data = [
     link: "https://criptifyyy.vercel.app/" // Add the link here
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    imageUrl: a12,
     // author: "John Doe",
     date: "18 Aug 2024",
     title: "Bricks and Steels",
@@ -37,10 +39,11 @@ const Card = ({ imageUrl, author, date, title, description, alt, link }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div className="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow transition-all duration-1000 ease-out transform hover:shadow-lg hover:scale-105">
-        <div>
+        <div className="w-full h-64"> {/* Set a fixed height */}
+         {/* Ensure image covers the container */}
           <img 
             src={imageUrl} 
-            className="w-full object-cover" 
+            className="w-full h-full object-cover"  
             alt={alt} 
           />
         </div>
@@ -92,6 +95,7 @@ const Project = () => {
       <div className={`grid lg:grid-cols-3 sm:grid-cols-1 gap-8 transition-all duration-1000 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-12'}`}>
         {data.map((item, index) => (
           <Card 
+            
             key={index}
             imageUrl={item.imageUrl}
             author={item.author}
