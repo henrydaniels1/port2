@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +19,15 @@ export default function NavBar() {
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white text-3xl focus:outline-none relative z-40">
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <button 
+          onClick={toggleMenu} 
+          className="text-white text-3xl focus:outline-none relative z-40"
+        >
+          {isOpen ? (
+            <span className="inline-block text-3xl">&#x2715;</span> // Times icon
+          ) : (
+            <span className="inline-block text-3xl">&#9776;</span> // Bars icon
+          )}
         </button>
       </div>
 

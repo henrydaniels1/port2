@@ -67,7 +67,7 @@ export default function LandingPage1() {
           Web Developer | Foreign Exchange Trader
         </motion.p>
         
-        {/* Social Icons Section */}
+        {/* Social Icons Section
         <motion.div
           className="flex space-x-8 relative z-10"
           initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ export default function LandingPage1() {
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
-        </motion.div>
+        </motion.div> */}
 
         {/* Call-to-Action Button */}
         <motion.div 
