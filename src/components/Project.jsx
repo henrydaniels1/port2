@@ -97,7 +97,7 @@ const Project = () => {
       <video src={b1} autoPlay loop muted/>
      
       <div
-        className={`grid lg:grid-cols-3 sm:grid-cols-1 gap-8 transition-all duration-1000 ease-out transform ${
+        className={`grid lg:grid-cols-3 sm:grid-cols-1 gap-16 transition-all duration-1000 ease-out transform ${
           isVisible
             ? 'opacity-100 translate-y-0 scale-100 rotate-0 blur-0'
             : 'opacity-0 translate-y-12 scale-90 rotate-3 blur-sm'
