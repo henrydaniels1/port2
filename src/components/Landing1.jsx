@@ -7,7 +7,7 @@ import {Footer} from './Footer'
 
 export default function Landing1() {
   return (
-    <div className="">
+    <div className="space-y-16">
       <Homepage />
        <Projects />
       <Contact />

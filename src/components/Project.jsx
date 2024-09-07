@@ -220,8 +220,8 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="w-[97%] lg:w-[95%] mx-auto">
-      <div className="py-16">
+    <div className="w-[97%] lg:w-[95%] mx-auto space-y-16">
+      <div className="">
         <p className="text-4xl font-bold text-center">Latest Work</p>
       </div>
 
@@ -229,7 +229,7 @@ const Project = () => {
         <video src={b1} autoPlay loop muted className="w-full" />
       </div>
 
-      <div ref={sectionRef} className="py-16 space-y-16 w-full mx-0">
+      <div ref={sectionRef} className="w-full mx-0">
         <div
           id="projects"
           className={`grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-16 transition-all duration-1000 ease-out transform ${

@@ -15,7 +15,7 @@ export default function Homepage() {
   return (
     <div>
       {/* Landing Section */}
-      <div className="relative bg-gray-900 min-h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden">
+      <div className="relative bg-gray-800 min-h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden">
         {/* Parallax Background Layers */}
         {/* <motion.div 
           className="absolute h-auto bg-cover max-w-full inset-0 bg-center opacity-50"
