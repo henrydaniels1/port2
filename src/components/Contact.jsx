@@ -84,8 +84,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className=" dark:text-gray-800 mb-16 h-full mt-16 w-[97%] lg:w-[95%] mx-auto">
-      <form onSubmit={handleSubmit} className="container w-full max-w-xl p-4 mx-auto space-y-6 rounded-md shadow dark:bg-gray-50">
+    <section id="contact" className=" dark:text-gray-800 h-full w-[97%] lg:w-[95%] mx-auto">
+      <form onSubmit={handleSubmit} className="container w-full max-w-xl px-4 py-10 mx-auto space-y-10 rounded-md shadow dark:bg-gray-50">
         <h2 className="w-full text-3xl font-bold leading-tight">Contact us</h2>
         
         <div>

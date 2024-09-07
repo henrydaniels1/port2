@@ -10,7 +10,7 @@ export default function Homepage() {
 //   const y1 = useTransform(scrollY, [0, 500], [0, 250]); 
   const y2 = useTransform(scrollY, [0, 500], [0, 100]); // Increased range for more effect
 //   const scale1 = useTransform(scrollY, [0, 500], [1, 1.01]); 
-  const scale2 = useTransform(scrollY, [0, 500], [1, 1.1]); // Scale effect for the second layer
+  const scale2 = useTransform(scrollY, [0, 500], [1, 1.5]); // Scale effect for the second layer
 
   return (
     <div>
@@ -29,7 +29,7 @@ export default function Homepage() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div> */}
         <motion.div 
-          className="absolute h-auto max-w-full inset-0 bg-cover bg-right opacity-50"
+          className="absolute h-auto max-w-full inset-0 bg-cover bg-center opacity-50"
           style={{ 
             y: y2, 
             scale: scale2,

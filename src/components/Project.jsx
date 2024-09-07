@@ -134,6 +134,7 @@
 import { useEffect, useRef, useState } from 'react';
 import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
+import a122 from '../assets/a122.png';
 import b1 from '../assets/vid3.mp4';
 
 const data = [
@@ -154,13 +155,14 @@ const data = [
     link: "https://brickss-sigma.vercel.app/",
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    imageUrl: a122,
     date: "18 Aug 2024",
     title: "Bricks and Steels",
     description: "A Portfolio Website for an Architect",
     alt: "React Hooks",
     link: "https://brickss-sigma.vercel.app/",
   },
+ 
 ];
 
 const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxOffset }) => {
