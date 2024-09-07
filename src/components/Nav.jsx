@@ -16,7 +16,7 @@ export default function NavBar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className=""><img src={a13} className='w-16 h-16 scale-125'></img></div>
+      <div className=""><img src={a13} className='w-16 h-16'></img></div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
@@ -48,21 +48,21 @@ export default function NavBar() {
           </a> */}
           <a
             href="#projects"
-            className="text-2xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
+            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             Projects
           </a>
-          <a
+          {/* <a
             href="#skills"
-            className="text-2xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
+            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             Skills
-          </a>
+          </a> */}
           <a
             href="#contact"
-            className="text-2xl text-white hover:text-gray-300 transition-transform duration-300"
+            className="text-xl text-white hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             Contact

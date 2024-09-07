@@ -1,4 +1,4 @@
-import LandingPage1 from './components/Landing1'
+import Landing1 from './components/Landing1.jsx'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <LandingPage1/>
+      <Landing1/>
       
     </>
   )
