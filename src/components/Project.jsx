@@ -169,7 +169,7 @@ const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxO
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div
-        className="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-700 ease-out transform hover:shadow-xl hover:rotate-4 hover:scale-105 hover:translate-y-2"
+        className="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow-2xl border transition-transform duration-700 ease-out transform hover:shadow-xl hover:rotate-4 hover:scale-105 hover:translate-y-2"
       >
         <div
           className="transform transition-transform duration-700 ease-out"
