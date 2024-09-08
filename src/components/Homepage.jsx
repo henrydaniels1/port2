@@ -85,7 +85,7 @@ export default function Homepage() {
             
           }}
         >
-          <a href="#projects" className="bg-white text-blue-900 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 transition">
+          <a href="#projects" className="bg-white text-purple-700 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 hover:text-purple-900 transition">
             View My Works
           </a>
         </motion.div>
