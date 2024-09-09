@@ -29,7 +29,7 @@ export default function Homepage() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div> */}
         <motion.div 
-          className="absolute h-auto max-w-full inset-0 bg-cover bg-center opacity-50"
+          className="absolute h-auto max-w-full inset-0 bg-cover bg-center "
           style={{ 
             y: y2, 
             scale: scale2,
