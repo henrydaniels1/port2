@@ -124,12 +124,15 @@ export const AboutUs = () => {
         >
            
           <div className="flex flex-col items-end px-3">
-            
-            <img
-              className="object-cover mb-6 rounded shadow-lg h-48 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+            <div className=" mb-6 "><SimpleParallax orientation="right" >
+                <img
+              className="object-cover rounded-lg shadow-lg h-48 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
               src={Pic1}
               alt=""
-            />
+            />  </SimpleParallax>
+            </div>
+            
+        
             <img
               className="object-cover w-20 h-35 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
               src={Pic2}

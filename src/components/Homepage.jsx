@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import NavBar from './Nav';
+import Btn1 from '../icons/Btn1';
 
 // import a1 from '../assets/bb2.jpg';
 import a2 from '../assets/a4.jpg';
@@ -90,10 +91,11 @@ export default function Homepage() {
             
           }}
         >
-          <a href="#projects" className="text-white bg-purple-700 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 hover:text-purple-900 transition">
+          {/* <a href="#projects" className="text-white bg-purple-700 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 hover:text-purple-900 transition">
             View My Works
-          </a>
+          </a> */} <a href="#projects"><Btn1/></a>
         </motion.div>
+       
       </div>
 
      

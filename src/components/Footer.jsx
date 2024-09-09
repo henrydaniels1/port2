@@ -186,6 +186,8 @@ export const Footer = () => {
           <p className="text-sm text-gray-500">
             © Copyright 2024 Henry-Daniel. All rights reserved.
           </p>
+
+          
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             {/* twitter */}
             <a
@@ -217,6 +219,8 @@ export const Footer = () => {
             </a>
             
           </div>
+
+
         </div>
       </div>
     </div>
