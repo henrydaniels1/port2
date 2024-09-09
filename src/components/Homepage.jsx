@@ -28,16 +28,21 @@ export default function Homepage() {
         
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div> */}
-        <motion.div 
-          className="absolute h-auto max-w-full inset-0 bg-cover bg-center "
-          style={{ 
-            y: y2, 
-            scale: scale2,
-            backgroundImage: `url(${a2})`
-          }}
-        >
+       <motion.div 
+  className="absolute inset-0 w-full h-[100vh] bg-cover bg-center"
+  style={{ 
+    y: y2, 
+    scale: scale2,
+    backgroundImage: `url(${a2})`,
+    backgroundSize: 'cover', // Ensures the image covers the whole div without distortion
+    backgroundPosition: 'center', // Centers the image
+  }}
+>
+  {/* Your content here */}
+
+
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         </motion.div>
 
         {/* Floating Navigation Bar */}
@@ -78,14 +83,14 @@ export default function Homepage() {
           className="relative z-10 mt-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-                  transition={ { duration: 0.8, delay: 1.5 } }
+                  transition={ { duration: 0.8, delay: 1.2 } }
                    style={{ 
             y: y2, 
             scale: scale2,
             
           }}
         >
-          <a href="#projects" className="bg-white text-purple-700 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 hover:text-purple-900 transition">
+          <a href="#projects" className="text-white bg-purple-700 py-2 px-6 rounded-full font-semibold text-lg hover:bg-gray-300 hover:text-purple-900 transition">
             View My Works
           </a>
         </motion.div>
