@@ -1,4 +1,5 @@
 
+import SimpleParallax from "simple-parallax-js";
 
 import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
@@ -90,14 +91,7 @@ export const AboutUs = () => {
                      <p className='font-semibold tracking-wider text-teal-900 lg:text-4xl md:text-3xl text-3xl'>About Me</p>
           </div>
           <div className="max-w-xl mb-6">
-            {/* <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Crafting Spaces That Inspire
-              <br className="hidden md:block" />
-              Your Vision, Our Design Expertise{' '}
-              <span className="inline-block text-deep-purple-accent-400">
-                Discover Architectural Excellence with Us
-              </span>
-            </h2> */}
+          
             <p className="text-base text-gray-700 md:text-lg text-justify">
               I’m a passionate web developer with 4 years of experience in building beautiful, responsive, and functional websites.
               Specializing in key skills like [JavaScript, React, ThreeJs], I enjoy taking on new challenges. Throughout my journey,
@@ -127,7 +121,9 @@ export const AboutUs = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-x-12'
           } -mx-4 lg:pl-8`}
         >
+           
           <div className="flex flex-col items-end px-3">
+            
             <img
               className="object-cover mb-6 rounded shadow-lg h-48 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
               src={Pic1}
@@ -138,12 +134,12 @@ export const AboutUs = () => {
               src={Pic2}
             />
           </div>
-          <div className="px-3">
+          <div className="px-3"><SimpleParallax orientation="left">
             <img
               className="object-cover w-40 h-52 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
               src={Pic3}
               alt=""
-            />
+            /></SimpleParallax>
           </div>
         </div>
       </div>
