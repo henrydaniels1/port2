@@ -35,6 +35,7 @@ export const AboutUs = () => {
 
   return (
     <div
+      id="About"
       ref={sectionRef}
       className=" pt-0 mx-auto md:w-[95%] w-[97%] md:px-0 lg:px-0"
     >

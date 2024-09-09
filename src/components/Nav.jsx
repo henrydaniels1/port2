@@ -33,11 +33,12 @@ export default function NavBar() {
       </div>
 
       {/* Menu Links */}
-      <motion.div 
-        className={`fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:static md:bg-transparent md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end`}
-      >
+     <motion.div 
+  className={`fixed inset-0 bg-black bg-opacity-50 backdrop-blur-lg flex flex-col items-center justify-center transition-transform duration-500 ease-in-out ${
+    isOpen ? 'translate-x-0' : 'translate-x-full'
+  } md:static md:bg-transparent md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end`}
+  style={{ backdropFilter: 'blur(10px)' }}  // This adds the backdrop blur effect
+>
         <div className="w-full md:w-auto flex flex-col md:flex-row items-center md:items-center md:space-x-4">
           {/* <a
             href="#about"
@@ -46,6 +47,13 @@ export default function NavBar() {
           >
             About
           </a> */}
+           <a
+            href="#About"
+            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
+            onClick={toggleMenu}
+          >
+            About Me
+          </a>
           <a
             href="#projects"
             className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
@@ -53,13 +61,7 @@ export default function NavBar() {
           >
             Projects
           </a>
-          {/* <a
-            href="#skills"
-            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
-            onClick={toggleMenu}
-          >
-            Skills
-          </a> */}
+         
           <a
             href="#contact"
             className="text-xl text-white hover:text-gray-300 transition-transform duration-300"
