@@ -7,7 +7,7 @@ import Phone from '../icons/phone.jsx'
 // import Github from '../icons/Github.jsx';
 import Facebook from '../icons/Facebook.jsx';
 import Twitter from '../icons/Twitter.jsx';
-import Ig from '../icons/ig.jsx';
+// import Ig from '../icons/ig.jsx';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xvgpyrqj");
@@ -88,12 +88,12 @@ export default function Contact() {
            
 
             {/* ig */}
-            <a
+            {/* <a
               href="/"
               className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
             >
             <Ig/>
-            </a>
+            </a> */}
 
             {/* github */}
             {/* <a
