@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import a13 from '../assets/logo1.png'
+import './Nav.css'
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,14 +50,14 @@ export default function NavBar() {
           </a> */}
            <a
             href="#About"
-            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
+            className="hvr-underline-from-center text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             About Me
           </a>
           <a
             href="#projects"
-            className="text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
+            className="hvr-underline-from-center text-xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             Projects
@@ -64,7 +65,7 @@ export default function NavBar() {
          
           <a
             href="#contact"
-            className="text-xl text-white hover:text-gray-300 transition-transform duration-300"
+            className="hvr-underline-from-center text-xl text-white hover:text-gray-300 transition-transform duration-300"
             onClick={toggleMenu}
           >
             Contact

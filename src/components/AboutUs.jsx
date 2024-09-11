@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
 import Pic2 from '../assets/bb2.jpg'
 import Pic3 from '../assets/c.jpg'
+// import { BoxRevealDemo } from "./BoxReveal";
 
 export const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -99,6 +100,7 @@ export const AboutUs = () => {
               I’ve worked on various projects that help businesses by creating intuitive and visually compelling digital experiences. Driven by curiosity,
               I’m always improving my craft, staying ahead of trends, and committed to delivering high-quality results.
             </p>
+            {/* <BoxRevealDemo/> */}
           </div>
           <div>
             <a
@@ -124,12 +126,14 @@ export const AboutUs = () => {
         >
            
           <div className="flex flex-col items-end px-3">
-            <div className=" mb-6 "><SimpleParallax orientation="right" >
+
+            <div className=" mb-6 ">
+              <SimpleParallax orientation="right" >
                 <img
               className="object-cover rounded-lg shadow-lg h-48 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
               src={Pic1}
-              alt=""
-            />  </SimpleParallax>
+                  alt="" />
+              </SimpleParallax>
             </div>
             
         
@@ -137,6 +141,7 @@ export const AboutUs = () => {
               className="object-cover w-20 h-35 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
               src={Pic2}
             />
+
           </div>
           <div className="px-3"><SimpleParallax orientation="left">
             <img
