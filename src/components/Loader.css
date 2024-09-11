@@ -1,4 +1,8 @@
 /* HTML: <div class="loader"></div> */
+.main-loader{
+  height: 100svh;
+}
+
 .loader {
   display: inline-flex;
   gap: 5px;
