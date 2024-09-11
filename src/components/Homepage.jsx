@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import NavBar from './Nav';
 import Btn1 from '../icons/Btn1';
+import './Loader.css'
 
 // import a1 from '../assets/bb2.jpg';
 import a2 from '../assets/a4.jpg';
@@ -16,7 +17,7 @@ export default function Homepage() {
   return (
     <div>
       {/* Landing Section */}
-      <div className="relative bg-gray-800 min-h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden">
+      <div className=" main-loader relative bg-gray-800  flex flex-col justify-center items-center text-white text-center overflow-hidden">
         {/* Parallax Background Layers */}
         {/* <motion.div 
           className="absolute h-auto bg-cover max-w-full inset-0 bg-center opacity-50"
