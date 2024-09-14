@@ -1,42 +1,36 @@
-
-/* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from 'react';
 import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
-// import a122 from '../assets/a122.png';
 import b1 from '../assets/vid3.mp4';
-import ExampleComponent from '../example/Scroll'
+// import ExampleComponent from '../example/Scroll';
 
+// Data for projects
 const data = [
   {
     imageUrl: a11,
-    date: "18 Aug 2024",
-    title: "CRIPTIFY",
-    description: "A Symmetric Encryption and Decryption Tool Website",
-    alt: "Sailboat UI",
-    link: "https://criptifyyy.vercel.app/",
+    date: 'Completed',
+    title: 'CRIPTIFY',
+    description: 'A Symmetric Encryption and Decryption Tool Website',
+    alt: 'Criptify',
+    link: 'https://criptifyyy.vercel.app/',
   },
   {
     imageUrl: a12,
-    date: "18 Aug 2024",
-    title: "Bricks and Steels",
-    description: "A Portfolio Website for an Architect",
-    alt: "React Hooks",
-    link: "https://brickss-sigma.vercel.app/",
+    date: 'In Progress',
+    title: 'Bricks and Steels',
+    description: 'A Portfolio Website for an Architect',
+    alt: 'Bricks and steels',
+    link: 'https://brickss-sigma.vercel.app/',
   },
-  // {
-  //   imageUrl: a122,
-  //   date: "18 Aug 2024",
-  //   title: "Bricks and Steels",
-  //   description: "A Portfolio Website for an Architect",
-  //   alt: "React Hooks",
-  //   link: "https://brickss-sigma.vercel.app/",
-  // },
- 
 ];
 
+// Card component
+// eslint-disable-next-line react/prop-types
+const Card = ({ imageUrl, date, title, description, alt, link, parallaxOffset }) => {
+  // Determine if the project is completed or in progress
+  const isCompleted = date === 'Completed';
+  const isInProgress = date === 'In Progress';
 
-const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxOffset }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div
@@ -53,8 +47,26 @@ const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxO
           </div>
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
           <div className="absolute inset-x-0 bottom-0 z-20 p-4">
-            <p className="mb-1 text-sm text-white text-opacity-80">
-              {author} • <time>{date}</time>
+            {/* Conditionally render "Completed" or "In Progress" with styles and icons */}
+            <p className="mb-1 text-sm text-white text-opacity-80 flex items-center space-x-2">
+              {isCompleted && (
+                <>
+                  {/* Icon for Completed */}
+                  <span className="bg-green-500 text-white p-1 rounded-full">
+                    {/* ✅ Replace with your preferred icon */}
+                  </span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-lg">Completed</span>
+                </>
+              )}
+              {isInProgress && (
+                <>
+                  {/* Icon for In Progress */}
+                  <span className="bg-yellow-500 text-white p-1 rounded-full">
+                    {/* ⏳ Replace with your preferred icon */}
+                  </span>
+                  <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-lg">In Progress</span>
+                </>
+              )}
             </p>
             <h3 className="text-xl font-medium text-white">{title}</h3>
             <p className="mt-1 text-white text-opacity-80">{description}</p>
@@ -65,6 +77,7 @@ const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxO
   );
 };
 
+// Project component
 const Project = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -94,10 +107,9 @@ const Project = () => {
 
   return (
     <div className="w-[97%] lg:w-[95%] mx-auto space-y-16">
-     
-      <ExampleComponent></ExampleComponent>
-    <div className="reveal2">
-        <p className="lg:text-4xl text-3xl  font-bold text-teal-900 text-center">Latest Work</p>
+  
+      <div className="reveal2">
+        <p className="md:text-4xl text-2xl font-bold text-teal-900 text-center">Latest Work</p>
       </div>
 
       <div className="h-full shadow-2xl">
@@ -117,7 +129,6 @@ const Project = () => {
             <Card
               key={index}
               imageUrl={item.imageUrl}
-              author={item.author}
               date={item.date}
               title={item.title}
               description={item.description}

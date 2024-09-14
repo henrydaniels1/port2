@@ -4,7 +4,7 @@ import Contact from './Contact';
 import { Footer } from './Footer'
 import { AboutUs } from './AboutUs'
 // import Skills from './Skills';
-// import ExampleComponent from '../example/Scroll'
+import ExampleComponent from '../example/Scroll'
 // import Parallax from "./Parallax";
 // import ThreepipeViewer from "../example/Imageslider";
 
@@ -14,7 +14,7 @@ export default function Landing1() {
     <div className="space-y-20">
       <Homepage />
     {/* <ThreepipeViewer/> */}
-      {/* <ExampleComponent/> */}
+      <ExampleComponent/>
       <AboutUs />
       {/* <Parallax/> */}
        <Projects />

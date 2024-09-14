@@ -5,12 +5,12 @@ import { useForm, ValidationError } from '@formspree/react';
 import anime from 'animejs';
 import Phone from '../icons/phone.jsx'
 import Github from '../icons/Github.jsx';
-import Facebook from '../icons/Facebook.jsx';
+// import Facebook from '../icons/Facebook.jsx';
 import Twitter from '../icons/Twitter.jsx';
 // import Ig from '../icons/ig.jsx';
 import Ig from '../icons/Instagram.jsx';
 import Linked from '../icons/Linked.jsx';
-import ExampleComponent from '../example/Scroll'
+// import ExampleComponent from '../example/Scroll'
 
 
 export default function Contact() {
@@ -60,42 +60,40 @@ export default function Contact() {
       className="animate-contact dark:text-gray-800 h-full w-[97%] lg:w-[95%] mx-auto flex flex-col lg:flex-row justify-between shadow-2xl opacity-0"
     >
       {/* Left Green Section */}
-      <div className="bg-gradient-to-br w-full lg:w-[50%] lg:py-8 lg:px-8 py-4 px-2 flex flex-col justify-center text-black">
+      <div className="bg-gradient-to-br  w-full lg:w-[50%] lg:py-8 lg:px-8 py-4 px-2 md:px-5 flex flex-col justify-center text-black">
         
         <div className="mb-8">
-          <ExampleComponent></ExampleComponent>
-          <p className="reveal2 text-4xl font-bold mb-8 text-teal-900">Contact Us</p>
+        
+          <p className="reveal2 md:text-4xl text-2xl  font-bold mb-8 text-teal-900">Contact Us</p>
           <p className="text-lg font-medium">We&apos;d love to hear from you! Reach out to us at:</p>
         </div>
         <div className="space-y-8">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8">
+            <div className="w-6 h-6">
               <img src={ad} alt="" className="w-full h-full" />
             </div>
-            <address>No.23 Oke Avenue, Ibadan.</address>
+            <address className='text-gray-400'>No.23 Oke Avenue, Ibadan.</address>
           </div>
           <div className="flex items-center space-x-2">
            
             <Phone/>
-            <p>08085833176</p>
+            <p className='text-gray-400'>08085833176</p>
           </div>
 
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8">
+            <div className="w-6 h-6">
               <img src={gm} alt="" className="w-full h-full scale-90" />
             </div>
-            <p>henrydanielchibuzor@gmail.com</p>
+            <p className='text-gray-400'>henrydanielchibuzor@gmail.com</p>
           </div>
 
           <div>
 
 <div className="reveal2 flex items-center space-x-4 mt-4 sm:mt-0">
-            {/* twitter */}
-           
-
-            {/* ig */}
+            
+           {/* ig */}
             <a
-              href="/"
+              href="https://www.instagram.com/ched_3/"
               className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
             >
             <Ig/>
@@ -103,29 +101,22 @@ export default function Contact() {
 
             {/* github */}
             <a
-              href="/"
+              href="https://github.com/henrydaniels1"
               className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
             >
               <Github/>
             </a>
 
-            {/* facebook */}
-            <a
-              href="/"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
-            >
-            <Facebook/>
-              </a>
             {/* twiiter */}
                <a
-              href="/"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
-            >
+              href="https://x.com/Ched_00"
+              className="text-gray-500 transition-colors duration-300 hover:text-violet-600">
               <Twitter/>
               </a>
+
               {/* Linkedin */ }
                 <a
-              href="/"
+              href="https://www.linkedin.com/in/henry-daniel-ezenwa-bb7969229/"
               className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
             >
               <Linked/>
@@ -138,10 +129,10 @@ export default function Contact() {
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full lg:w-[50%] ">
+      <div className="w-full lg:w-[50%]">
         <form
           onSubmit={handleSubmit}
-          className="container w-full lg:px-6 px-2 py-10 mx-auto space-y-10 dark:bg-gray-50"
+          className="container w-full lg:px-6 px-2 md:px-4 py-10 mx-auto space-y-10 dark:bg-gray-50"
         >
           <div>
             <label htmlFor="name" className="block mb-1 ml-1 font-medium">

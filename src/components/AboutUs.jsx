@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
 import Pic2 from '../assets/bb2.jpg'
 import Pic3 from '../assets/c.jpg'
-import ExampleComponent from '../example/Scroll'
 import '../style/Button.css'
 
 // import { BoxRevealDemo } from "./BoxReveal";
@@ -43,13 +42,15 @@ export const AboutUs = () => {
       ref={sectionRef}
       className=" pt-0 mx-auto md:w-[95%] w-[97%] md:px-0 lg:px-0"
     >
-      <div className="grid gap-10 lg:grid-cols-2 ">
+
+      <div className="grid gap-10 md:grid-cols-2 ">
+
         <div
           className={`flex flex-col justify-center transition-all space-y-6 duration-1000 ease-out transform ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-12'
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
           } md:pr-8 xl:pr-0 lg:max-w-lg`}
         >
-          <ExampleComponent/>
+         
           <div
             className="reveal2 flex items-center space-x-4 mb-4 rounded-full bg-teal-accent-400"
           >
@@ -94,11 +95,11 @@ export const AboutUs = () => {
                 strokeLinejoin="round"
               />
                       </svg>
-                     <p className='font-semibold tracking-wider text-teal-900 lg:text-4xl md:text-3xl text-3xl'>About Me</p>
+                     <p className='font-semibold tracking-wider text-teal-900 lg:text-4xl md:text-4xl text-2xl '>About Me</p>
           </div>
           <div className="max-w-xl mb-6">
           
-            <p className="text-base text-gray-700 md:text-lg text-justify">
+            <p className="reveal3 text-base text-gray-700 md:text-lg text-justify">
               I am an experienced web developer with 4 years of expertise in JavaScript, React, and Three.js.
               I create responsive, visually appealing websites that enhance business performance.
               Driven by a commitment to innovation and quality, I continuously refine my skills and stay ahead of industry trends.
@@ -106,12 +107,10 @@ export const AboutUs = () => {
             {/* <BoxRevealDemo/> */}
           </div>
 
-          <div className="">
-           
-            
+          <div className="reveal2">
             <a style={ { "--clr": "#000" } } className="btn-3 px-4 py-2 rounded-2xl" href="#">
               <p className="md:text-xl sm:text-lg">  learn more</p>
-      <span className="button__icon-wrapper p-2 ">
+              <span className="button__icon-wrapper p-2 ">
                 
       <svg
         width="10"
@@ -139,24 +138,25 @@ export const AboutUs = () => {
         ></path>
       </svg>
                 
-    </span>
-  
-  </a>
-</div>
+              </span>
+            </a>
+          </div>
 
         </div>
+
+        
         <div
-          className={`flex items-center justify-center transition-all duration-1000 ease-out transform ${
+          className={`flex items-center lg:justify-end justify-start transition-all duration-1000 ease-out transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-x-12'
-          } -mx-4 lg:pl-8`}
+          } - lg:pl-8`}
         >
            
-          <div className="flex flex-col items-end px-3">
+          <div className="flex flex-col items-end">
 
             <div className=" mb-6 ">
               <SimpleParallax orientation="right" >
                 <img
-              className="object-cover rounded-lg shadow-lg h-48 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+              className="object-cover rounded-lg shadow-lg h-48 w-40 md:w-48  xl:h-56 xl:w-56"
               src={Pic1}
                   alt="" />
               </SimpleParallax>
@@ -164,14 +164,14 @@ export const AboutUs = () => {
             
         
             <img
-              className="object-cover w-20 h-35 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+              className="object-cover w-28 h-28 md:w-32 md:h-32 rounded shadow-lg  xl:h-40  xl:w-40"
               src={Pic2}
             />
 
           </div>
-          <div className="px-3"><SimpleParallax orientation="left">
+          <div className="pl-6 md:pl-3"><SimpleParallax orientation="left">
             <img
-              className="object-cover w-40 h-52 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
+              className="object-cover w-40 h-52 rounded-lg shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
               src={Pic3}
               alt=""
             /></SimpleParallax>

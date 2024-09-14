@@ -11,7 +11,7 @@ const ExampleComponent = () => {
       duration: 1000,
       distance: '100px',
       easing: 'ease-in-out',
-      origin: 'left',
+      origin: 'right',
       reset: true, // This allows the animation to trigger every time the component is visible
     });
   }, [] );
@@ -23,6 +23,16 @@ const ExampleComponent = () => {
       distance: '70px',
       easing: 'ease-in-out',
       origin: 'left',
+      reset: true, // This allows the animation to trigger every time the component is visible
+    });
+  }, []);
+   useEffect(() => {
+    // Apply ScrollReveal to the desired elements
+    ScrollReveal().reveal('.reveal3', {
+      duration: 1200,
+      distance: '70px',
+      easing: 'ease-in-out',
+      origin: 'right',
       reset: true, // This allows the animation to trigger every time the component is visible
     });
   }, []);

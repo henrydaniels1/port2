@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import a13 from '../assets/logo1.png'
 import '../style/Nav.css'
+// import ExampleComponent from '../example/Scroll'
+
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +19,8 @@ export default function NavBar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className=""><img src={a13} className='w-16 h-16'></img></div>
+     
+      <div className="reveal"><img src={a13} className='w-16 h-16'></img></div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
@@ -40,7 +43,7 @@ export default function NavBar() {
   } md:static md:bg-transparent md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end`}
   style={{ backdropFilter: 'blur(10px)' }}  // This adds the backdrop blur effect
 >
-        <div className="w-full md:w-auto flex flex-col md:flex-row items-center md:items-center md:space-x-4">
+        <div className=" w-full md:w-auto flex flex-col md:flex-row items-center md:items-center md:space-x-4">
           {/* <a
             href="#about"
             className="text-2xl text-white mb-8 md:mb-0 hover:text-gray-300 transition-transform duration-300"
