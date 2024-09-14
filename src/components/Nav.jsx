@@ -20,7 +20,7 @@ export default function NavBar() {
       transition={{ duration: 0.8 }}
     >
      
-      <div className="reveal"><img src={a13} className='w-16 h-16'></img></div>
+      <div className=""><img src={a13} className='w-16 h-16'></img></div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
