@@ -11,7 +11,7 @@ import ExampleComponent from '../example/Scroll'
 
 export default function Landing1() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 overflow-hidden">
       <Homepage />
     {/* <ThreepipeViewer/> */}
       <ExampleComponent/>

@@ -18,7 +18,7 @@ export default function Homepage() {
   const scale2 = useTransform(scrollY, [0, 500], [1, 1.5]); // Scale effect for the second layer
 
   return (
-    <div className='element'>
+    <div className=''>
       {/* Landing Section */}
       <div className=" main-loader relative bg-gray-800  flex flex-col justify-center items-center text-white text-center overflow-hidden">
 
