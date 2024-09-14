@@ -17,7 +17,7 @@ export default function NavBar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className=""><img src={a13} className='w-16 h-16'></img></div>
+      <div className="flex h-16 w-16 relative"><img src={a13} className='absolute right-3 w-full h-full'></img></div>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
