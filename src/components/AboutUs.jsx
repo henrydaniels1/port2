@@ -5,6 +5,9 @@ import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
 import Pic2 from '../assets/bb2.jpg'
 import Pic3 from '../assets/c.jpg'
+import ExampleComponent from '../example/Scroll'
+import '../style/Button.css'
+
 // import { BoxRevealDemo } from "./BoxReveal";
 
 export const AboutUs = () => {
@@ -40,14 +43,15 @@ export const AboutUs = () => {
       ref={sectionRef}
       className=" pt-0 mx-auto md:w-[95%] w-[97%] md:px-0 lg:px-0"
     >
-      <div className="grid gap-10 lg:grid-cols-2">
+      <div className="grid gap-10 lg:grid-cols-2 ">
         <div
-          className={`flex flex-col justify-center transition-all duration-1000 ease-out transform ${
+          className={`flex flex-col justify-center transition-all space-y-6 duration-1000 ease-out transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-12'
           } md:pr-8 xl:pr-0 lg:max-w-lg`}
         >
+          <ExampleComponent/>
           <div
-            className="flex items-center space-x-4 mb-4 rounded-full bg-teal-accent-400"
+            className="reveal2 flex items-center space-x-4 mb-4 rounded-full bg-teal-accent-400"
           >
             <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
               <polyline
@@ -95,29 +99,51 @@ export const AboutUs = () => {
           <div className="max-w-xl mb-6">
           
             <p className="text-base text-gray-700 md:text-lg text-justify">
-              I’m a passionate web developer with 4 years of experience in building beautiful, responsive, and functional websites.
-              Specializing in key skills like [JavaScript, React, ThreeJs], I enjoy taking on new challenges. Throughout my journey,
-              I’ve worked on various projects that help businesses by creating intuitive and visually compelling digital experiences. Driven by curiosity,
-              I’m always improving my craft, staying ahead of trends, and committed to delivering high-quality results.
+              I am an experienced web developer with 4 years of expertise in JavaScript, React, and Three.js.
+              I create responsive, visually appealing websites that enhance business performance.
+              Driven by a commitment to innovation and quality, I continuously refine my skills and stay ahead of industry trends.
             </p>
             {/* <BoxRevealDemo/> */}
           </div>
-          <div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-600 hover:text-purple-900"
-            >
-              Learn more
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
-            </a>
-          </div>
+
+          <div className="">
+           
+            
+            <a style={ { "--clr": "#000" } } className="btn-3 px-4 py-2 rounded-2xl" href="#">
+              <p className="md:text-xl sm:text-lg">  learn more</p>
+      <span className="button__icon-wrapper p-2 ">
+                
+      <svg
+        width="10"
+        className="button__icon-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 15"
+      >
+        <path
+          fill="currentColor"
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        ></path>
+      </svg>
+
+      <svg
+        className="button__icon-svg button__icon-svg--copy"
+        xmlns="http://www.w3.org/2000/svg"
+        width="10"
+        fill="none"
+        viewBox="0 0 14 15"
+      >
+        <path
+          fill="currentColor"
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        ></path>
+      </svg>
+                
+    </span>
+  
+  </a>
+</div>
+
         </div>
         <div
           className={`flex items-center justify-center transition-all duration-1000 ease-out transform ${

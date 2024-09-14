@@ -10,6 +10,8 @@ import Twitter from '../icons/Twitter.jsx';
 // import Ig from '../icons/ig.jsx';
 import Ig from '../icons/Instagram.jsx';
 import Linked from '../icons/Linked.jsx';
+import ExampleComponent from '../example/Scroll'
+
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xvgpyrqj");
@@ -59,8 +61,10 @@ export default function Contact() {
     >
       {/* Left Green Section */}
       <div className="bg-gradient-to-br w-full lg:w-[50%] lg:py-8 lg:px-8 py-4 px-2 flex flex-col justify-center text-black">
+        
         <div className="mb-8">
-          <p className="text-4xl font-bold mb-8 text-teal-900">Contact Us</p>
+          <ExampleComponent></ExampleComponent>
+          <p className="reveal2 text-4xl font-bold mb-8 text-teal-900">Contact Us</p>
           <p className="text-lg font-medium">We&apos;d love to hear from you! Reach out to us at:</p>
         </div>
         <div className="space-y-8">
@@ -85,7 +89,7 @@ export default function Contact() {
 
           <div>
 
-<div className="flex items-center space-x-4 mt-4 sm:mt-0">
+<div className="reveal2 flex items-center space-x-4 mt-4 sm:mt-0">
             {/* twitter */}
            
 
@@ -134,7 +138,7 @@ export default function Contact() {
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full lg:w-[50%]">
+      <div className="w-full lg:w-[50%] ">
         <form
           onSubmit={handleSubmit}
           className="container w-full lg:px-6 px-2 py-10 mx-auto space-y-10 dark:bg-gray-50"

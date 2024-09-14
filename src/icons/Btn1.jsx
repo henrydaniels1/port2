@@ -1,4 +1,4 @@
-import '../components/Button.css'
+import '../style/Button.css'
 export default function Btn1() {
   return (
     <div>

@@ -10,7 +10,7 @@ function App() {
     // Simulate a data fetching process
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (

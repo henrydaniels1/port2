@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import a13 from '../assets/logo1.png'
-import './Nav.css'
+import '../style/Nav.css'
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -5,6 +5,7 @@ import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
 // import a122 from '../assets/a122.png';
 import b1 from '../assets/vid3.mp4';
+import ExampleComponent from '../example/Scroll'
 
 const data = [
   {
@@ -33,6 +34,7 @@ const data = [
   // },
  
 ];
+
 
 const Card = ({ imageUrl, author, date, title, description, alt, link, parallaxOffset }) => {
   return (
@@ -92,7 +94,9 @@ const Project = () => {
 
   return (
     <div className="w-[97%] lg:w-[95%] mx-auto space-y-16">
-      <div className="">
+     
+      <ExampleComponent></ExampleComponent>
+    <div className="reveal2">
         <p className="lg:text-4xl text-3xl  font-bold text-teal-900 text-center">Latest Work</p>
       </div>
 

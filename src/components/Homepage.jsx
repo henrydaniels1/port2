@@ -1,23 +1,27 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import NavBar from './Nav';
 import Btn1 from '../icons/Btn1';
-import './Loader.css'
-
+import '../style/Loader.css';
 // import a1 from '../assets/bb2.jpg';
 import a2 from '../assets/a4.jpg';
 import Typewriter from 'typewriter-effect';
 
+
+
+
+
 export default function Homepage() {
   const { scrollY } = useScroll();
 //   const y1 = useTransform(scrollY, [0, 500], [0, 250]); 
-  const y2 = useTransform(scrollY, [0, 500], [0, 100]); // Increased range for more effect
+  const y2 = useTransform(scrollY, [0, 500], [0, 150]); // Increased range for more effect
 //   const scale1 = useTransform(scrollY, [0, 500], [1, 1.01]); 
   const scale2 = useTransform(scrollY, [0, 500], [1, 1.5]); // Scale effect for the second layer
 
   return (
-    <div>
+    <div className='element'>
       {/* Landing Section */}
       <div className=" main-loader relative bg-gray-800  flex flex-col justify-center items-center text-white text-center overflow-hidden">
+
         {/* Parallax Background Layers */}
         {/* <motion.div 
           className="absolute h-auto bg-cover max-w-full inset-0 bg-center opacity-50"
@@ -30,6 +34,7 @@ export default function Homepage() {
         
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </motion.div> */}
+        
        <motion.div 
   className="absolute inset-0 w-full h-[100vh] bg-cover bg-center"
   style={{ 
@@ -40,11 +45,11 @@ export default function Homepage() {
     backgroundPosition: 'center', // Centers the image
   }}
 >
-  {/* Your content here */}
+
 
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         </motion.div>
 
         {/* Floating Navigation Bar */}
