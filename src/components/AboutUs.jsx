@@ -97,6 +97,7 @@ export const AboutUs = () => {
                       </svg>
                      <p className='font-semibold tracking-wider text-teal-900 lg:text-4xl md:text-4xl text-2xl '>About Me</p>
           </div>
+          
           <div className="max-w-xl mb-6">
           
             <p className="reveal3 text-base text-gray-700 md:text-lg text-justify">

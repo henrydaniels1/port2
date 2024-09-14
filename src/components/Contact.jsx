@@ -5,12 +5,13 @@ import { useForm, ValidationError } from '@formspree/react';
 import anime from 'animejs';
 import Phone from '../icons/phone.jsx'
 import Github from '../icons/Github.jsx';
-// import Facebook from '../icons/Facebook.jsx';
 import Twitter from '../icons/Twitter.jsx';
-// import Ig from '../icons/ig.jsx';
 import Ig from '../icons/Instagram.jsx';
 import Linked from '../icons/Linked.jsx';
+import Map from '../assets/world.svg'
 // import ExampleComponent from '../example/Scroll'
+// import Facebook from '../icons/Facebook.jsx';
+// import Ig from '../icons/ig.jsx';
 
 
 export default function Contact() {
@@ -59,15 +60,16 @@ export default function Contact() {
       ref={contactSectionRef}
       className="animate-contact dark:text-gray-800 h-full w-[97%] lg:w-[95%] mx-auto flex flex-col lg:flex-row justify-between shadow-2xl opacity-0"
     >
-      {/* Left Green Section */}
-      <div className="bg-gradient-to-br  w-full lg:w-[50%] lg:py-8 lg:px-8 py-4 px-2 md:px-5 flex flex-col justify-center text-black">
-        
-        <div className="mb-8">
+      {/* Left Green Section */ }
+     
+      <div className="relative bg-gradient-to-br  w-full lg:w-[50%] overflow-hidden lg:py-8 lg:px-8 py-4 px-2 md:px-5 flex flex-col justify-center text-black">
+         <img src={Map} className='absolute opacity-80 object-cover'></img>
+        <div className="mb-8 z-30">
         
           <p className="reveal2 md:text-4xl text-2xl  font-bold mb-8 text-teal-900">Contact Us</p>
           <p className="text-lg font-medium">We&apos;d love to hear from you! Reach out to us at:</p>
         </div>
-        <div className="space-y-8">
+        <div className="space-y-8  z-30">
           <div className="flex items-center space-x-2">
             <div className="w-6 h-6">
               <img src={ad} alt="" className="w-full h-full" />
@@ -129,7 +131,7 @@ export default function Contact() {
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full lg:w-[50%]">
+      <div className="w-full  lg:w-[50%]">
         <form
           onSubmit={handleSubmit}
           className="container w-full lg:px-6 px-2 md:px-4 py-10 mx-auto space-y-10 dark:bg-gray-50"
