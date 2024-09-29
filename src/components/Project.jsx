@@ -53,7 +53,7 @@ const Card = ({ imageUrl, date, title, description, alt, link, parallaxOffset })
           }}
         >
           <div className="w-full h-64">
-            <img src={imageUrl} className="w-full h-full object-cover" alt={alt} />
+            <img src={imageUrl} className="w-full h-full object-center" alt={alt} />
           </div>
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black"></div>
           <div className="absolute inset-x-0 bottom-0 z-20 p-4">
