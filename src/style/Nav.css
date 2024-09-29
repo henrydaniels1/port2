@@ -7,6 +7,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  
 }
 .hvr-underline-from-center:before {
   content: "";
@@ -15,7 +16,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #4f6eb1;
+  background: #ecae10;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -28,3 +29,4 @@
   left: 0;
   right: 0;
 }
+

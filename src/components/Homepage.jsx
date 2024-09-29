@@ -20,7 +20,7 @@ export default function Homepage() {
   return (
     <div className=''>
       {/* Landing Section */}
-      <div className=" main-loader relative bg-gray-800  flex flex-col justify-center items-center text-white text-center overflow-hidden">
+      <div className=" main-loader relative bg-[#111727] flex flex-col justify-center items-center text-white text-center overflow-hidden">
 
         {/* Parallax Background Layers */}
         {/* <motion.div 

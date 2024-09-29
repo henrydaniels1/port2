@@ -110,6 +110,7 @@ export const AboutUs = () => {
 
           <div className="reveal2">
             <a style={ { "--clr": "#000" } } className="btn-3 px-4 py-2 rounded-2xl" href="#">
+              
               <p className="md:text-xl sm:text-lg">  learn more</p>
               <span className="button__icon-wrapper p-2 ">
                 
@@ -142,6 +143,7 @@ export const AboutUs = () => {
               </span>
             </a>
           </div>
+        
 
         </div>
 

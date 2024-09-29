@@ -96,7 +96,7 @@ export default function Contact() {
            {/* ig */}
             <a
               href="https://www.instagram.com/ched_3/"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
+              className="text-gray-500 transition-colors duration-300 hover:text-purple-600"
             >
             <Ig/>
             </a>
@@ -104,7 +104,7 @@ export default function Contact() {
             {/* github */}
             <a
               href="https://github.com/henrydaniels1"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
+              className="text-gray-500 transition-colors duration-300 hover:text-purple-600"
             >
               <Github/>
             </a>
@@ -112,14 +112,14 @@ export default function Contact() {
             {/* twiiter */}
                <a
               href="https://x.com/Ched_00"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600">
+              className="text-gray-500 transition-colors duration-300 hover:text-purple-600">
               <Twitter/>
               </a>
 
               {/* Linkedin */ }
                 <a
               href="https://www.linkedin.com/in/henry-daniel-ezenwa-bb7969229/"
-              className="text-gray-500 transition-colors duration-300 hover:text-violet-600"
+              className="text-gray-500 transition-colors duration-300 hover:text-purple-600"
             >
               <Linked/>
               </a>
@@ -134,70 +134,71 @@ export default function Contact() {
       <div className="w-full  lg:w-[50%]">
         <form
           onSubmit={handleSubmit}
-          className="container w-full lg:px-6 px-2 md:px-4 py-10 mx-auto space-y-10 dark:bg-gray-50"
+          className="container w-full shadow-2xl  lg:px-6 px-2 md:px-4 py-10 mx-auto space-y-10 dark:bg-gray-50"
         >
-          <div>
-            <label htmlFor="name" className="block mb-1 ml-1 font-medium">
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Your name"
-              required
-              className="block w-full p-3 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100"
-            />
-          </div>
+         <div>
+  <label htmlFor="name" className="block mb-1 ml-1 font-medium">
+    Name
+  </label>
+  <input
+    id="name"
+    type="text"
+    name="name"
+    placeholder="Your name"
+    required
+    className="block w-full p-3 rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+  />
+</div>
 
-          <div>
-            <label htmlFor="email" className="block mb-1 ml-1 font-medium">
-              Email Address
-            </label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Your email"
-              required
-              className="block w-full p-3 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100"
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-              className="text-red-600 text-sm mt-1"
-            />
-          </div>
+<div>
+  <label htmlFor="email" className="block mb-1 ml-1 font-medium">
+    Email Address
+  </label>
+  <input
+    id="email"
+    type="email"
+    name="email"
+    placeholder="Your email"
+    required
+    className="block w-full p-3 rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+  />
+  <ValidationError
+    prefix="Email"
+    field="email"
+    errors={state.errors}
+    className="text-red-600 text-sm mt-1"
+  />
+</div>
 
-          <div>
-            <label htmlFor="message" className="block mb-1 ml-1 font-medium">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message..."
-              required
-              className="block w-full p-3 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100"
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-              className="text-red-600 text-sm mt-1"
-            />
-          </div>
+<div>
+  <label htmlFor="message" className="block mb-1 ml-1 font-medium">
+    Message
+  </label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Message..."
+    required
+    className="block w-full p-3 rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+  />
+  <ValidationError
+    prefix="Message"
+    field="message"
+    errors={state.errors}
+    className="text-red-600 text-sm mt-1"
+  />
+</div>
 
-          <div>
-            <button
-              type="submit"
-              disabled={state.submitting}
-              className="w-full px-4 py-3 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-violet-600 focus:dark:ring-violet-600 hover:dark:ring-violet-600 dark:text-gray-50"
-            >
-              Submit
-            </button>
-          </div>
+<div>
+  <button
+    type="submit"
+    disabled={state.submitting}
+    className="w-full px-4 py-3 font-bold rounded shadow focus:outline-none focus:ring-2 focus:ring-purple-600 bg-purple-600 hover:bg-purple-700 text-white"
+  >
+    Submit
+  </button>
+</div>
+
         </form>
       </div>
     </section>

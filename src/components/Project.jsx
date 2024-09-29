@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
+import a13 from '../assets/ChedFx.png';
 import b1 from '../assets/vid3.mp4';
+import '../style/Fxstyle.css'
 // import ExampleComponent from '../example/Scroll';
 
 // Data for projects
@@ -22,6 +24,14 @@ const data = [
     alt: 'Bricks and steels',
     link: 'https://brickss-sigma.vercel.app/',
   },
+  {
+    imageUrl: a13,
+    date: 'In Progress',
+    title: 'ChedFx',
+    description: 'A Forex Training website',
+    alt: 'ChedFx',
+    link: 'https://ched-fx.vercel.app/',
+  },
 ];
 
 // Card component
@@ -34,7 +44,7 @@ const Card = ({ imageUrl, date, title, description, alt, link, parallaxOffset })
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div
-        className="relative mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow-2xl border-[1.5px] transition-transform duration-700 ease-out transform hover:shadow-xl hover:rotate-4 hover:scale-105 hover:translate-y-2"
+        className="relative cont1 mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-2xl border-[1.5px] transition-transform duration-700 ease-out transform hover:shadow-xl hover:rotate-4 hover:scale-105 hover:translate-y-2"
       >
         <div
           className="transform transition-transform duration-700 ease-out"
