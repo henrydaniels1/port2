@@ -7,7 +7,8 @@ import '../App.css'
 import ExampleComponent from '../example/Scroll'
 // import {WordCloudChart} from './Word.jsx'
 import WordCloudChart from './Word'
-import Award from './Award'
+// import Award from './Award'
+import CarouselIndicatorsInside from './Slider'
 
 
 export default function Landing1() {
@@ -21,7 +22,8 @@ export default function Landing1() {
       <WordCloudChart/>
      
       <Projects />
-      <Award/>
+      <CarouselIndicatorsInside/>
+      {/* <Award/> */}
       <Contact />
      
       <Footer/>
