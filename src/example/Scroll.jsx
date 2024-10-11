@@ -25,7 +25,20 @@ const ExampleComponent = () => {
       origin: 'left',
       reset: true, // This allows the animation to trigger every time the component is visible
     });
-  }, []);
+   }, [] );
+  
+   useEffect(() => {
+    // Apply ScrollReveal to the desired elements
+    ScrollReveal().reveal('.reveal4', {
+      duration: 1200,
+      distance: '70px',
+      easing: 'ease-in-out',
+      origin: 'top',
+      reset: true, // This allows the animation to trigger every time the component is visible
+    });
+   }, [] );
+  
+  
    useEffect(() => {
     // Apply ScrollReveal to the desired elements
     ScrollReveal().reveal('.reveal3', {
