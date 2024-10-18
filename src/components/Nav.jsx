@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import a13 from '../assets/logo1.png';
 import '../style/Nav.css';
 
@@ -70,11 +70,11 @@ export default function NavBar() {
           </a>
 
           
-          <Link to="/fx">
+          {/* <Link to="/fx">
             <div className="hvr-underline-from-center text-xl text-white hover:text-gray-300 transition-transform duration-300">
               Fx page
             </div>
-          </Link>
+          </Link> */}
          
         </div>
       </motion.div>
