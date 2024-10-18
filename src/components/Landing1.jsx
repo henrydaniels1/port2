@@ -5,11 +5,10 @@ import { Footer } from './Footer'
 import { AboutUs } from './AboutUs'
 import '../App.css'
 import ExampleComponent from '../example/Scroll'
-// import {WordCloudChart} from './Word.jsx'
 import WordCloudChart from './Word'
-// import Award from './Award'
 import CarouselIndicatorsInside from './Slider'
-
+// import  Earth from './Earth.jsx'
+// import Award from './Award'
 
 export default function Landing1() {
   return (
@@ -17,8 +16,10 @@ export default function Landing1() {
       <Homepage />
 
     
-      <ExampleComponent/>
+      <ExampleComponent />
+    
       <AboutUs />
+      {/* < Earth/> */}
       <WordCloudChart/>
      
       <Projects />
