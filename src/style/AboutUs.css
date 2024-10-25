@@ -1,0 +1,93 @@
+/* Updated CSS */
+
+.about-section {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.text-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0044cc; /* Same color as requested */
+  margin-bottom: 1rem;
+}
+
+.text-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333; /* Same requested color */
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.btn-3 {
+  --clr: #000; /* Use preferred color variable */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.btn-3:hover {
+  background: var(--clr);
+  color: #fff;
+  border-color: var(--clr);
+}
+
+/* Icon Styling */
+.button__icon-wrapper {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-main {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  transition: filter 0.3s, transform 0.3s;
+  filter: grayscale(100%);
+}
+
+.image-main:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.image-small-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.image-small {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  transition: filter 0.3s, transform 0.3s;
+  filter: grayscale(100%);
+}
+
+.image-small:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}

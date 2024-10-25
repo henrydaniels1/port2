@@ -20,13 +20,6 @@ const WordCloudChart = () => {
       layout: root.verticalLayout
     }));
 
-    // Add chart title
-    // container.children.push(am5.Label.new(root, {
-    //   text: "Most popular languages on StackOverflow",
-    //   fontSize: 20,
-    //   x: am5.percent(50),
-    //   centerX: am5.percent(50)
-    // }));
 
     // Add series
     const series = container.children.push(am5wc.WordCloud.new(root, {
@@ -79,28 +72,7 @@ const WordCloudChart = () => {
       { tag: "Git", weight: 30.32 },
       { tag: "Figma", weight: 28.32 },
       { tag: "Firebase", weight: 7.03 },
-      // { tag: "Ruby", weight: 6.75 },
-      // { tag: "Dart", weight: 6.02 },
-      // { tag: "Assembly", weight: 5.61 },
-      // { tag: "Swift", weight: 5.1 },
-      // { tag: "R", weight: 5.07 },
-      // { tag: "VBA", weight: 4.66 },
-      // { tag: "Matlab", weight: 4.66 },
-      // { tag: "Groovy", weight: 3.01 },
-      // { tag: "Objective-C", weight: 2.8 },
-      // { tag: "Scala", weight: 2.6 },
-      // { tag: "Perl", weight: 2.46 },
-      // { tag: "Haskell", weight: 2.12 },
-      // { tag: "Delphi", weight: 2.1 },
-      // { tag: "Clojure", weight: 1.88 },
-      // { tag: "Elixir", weight: 1.74 },
-      // { tag: "LISP", weight: 1.33 },
-      // { tag: "Julia", weight: 1.29 },
-      // { tag: "F#", weight: 0.97 },
-      // { tag: "Erlang", weight: 0.79 },
-      // { tag: "APL", weight: 0.65 },
-      // { tag: "Crystal", weight: 0.56 },
-      // { tag: "COBOL", weight: 0.53 },
+     
     ]);
 
     return () => {

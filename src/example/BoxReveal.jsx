@@ -145,7 +145,7 @@ export function BoxRevealDemo() {
         <button
           className=" bg-[#5046e6] text-white py-2 px-8 rounded-full text-lg font-semibold shadow-lg hover:bg-[#3f38c1] hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#3f38c1]"      >
          Explore
-       </button>
+        </button>
       </BoxReveal>
     </div>
   );

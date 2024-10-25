@@ -1,5 +1,5 @@
 import '../style/Loader.css';
-import ExampleComponent from '../example/Scroll'
+import ExampleComponent from './Scroll'
 // import logo from '../assets/logo33.png'
 
 
