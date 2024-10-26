@@ -392,3 +392,30 @@
     transform: translate(0, 0) rotateX(0) rotateY(360deg);
   }
 }
+
+
+
+
+.loader-image {
+  animation: rotate 2s infinite;
+  height: 50px; /* Adjust the height based on your image size */
+  width: 50px; /* Adjust the width based on your image size */
+}
+
+.loader-image img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.9);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}

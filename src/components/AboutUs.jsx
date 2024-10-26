@@ -140,15 +140,16 @@ export const AboutUs = () => {
         </div>
 
         <div
-          className={`flex items-center lg:justify-end justify-start transition-all duration-700 ease-out transform ${
+          className={`flex items-center justify-between transition-all duration-700 ease-out transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-          } lg:pl-8`}>
-          <div className='flex flex-col items-end gap-6 pr-6'>
+            } lg:pl-8` }>
+          
+          <div className='flex flex-col items-end gap-6 pr-6 '>
             <div className='transform transition-transform duration-500 hover:scale-105'>
               
               <SimpleParallax orientation='right' >
                 <img
-                  className='object-cover rounded-xl shadow-md h-48 w-40 md:w-48 xl:h-56 xl:w-56'
+                  className='object-cover rounded-xl shadow-md h-48 w-48 md:w-48 xl:h-56 xl:w-56'
                   src={Pic1}
                   alt='Decorative image 1'
                 />
@@ -163,11 +164,11 @@ export const AboutUs = () => {
             </div>
           </div>
 
-          <div className='pl-6 md:pl-3 rounded-xl transform transition-transform duration-500 hover:scale-105'>
+          <div className='rounded-xl  flex justify-self-end transform transition-transform duration-500 hover:scale-105'>
             <SimpleParallax orientation='left'>
              
               <img
-                className='object-cover  shadow-md h-52 w-40 sm:h-64 sm:w-64 xl:h-80 xl:w-80'
+                className='object-cover  shadow-md h-52 w-48 lg:h-64 lg:w-64 xl:h-80 xl:w-80'
                 src={Pic3}
                 alt='Decorative image 3'
               />

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import a13 from '../assets/logo1.png'
+import a13 from '../assets/logo7.png'
 import '../style/Nav.css'
 
 export default function NavBar() {
@@ -16,8 +16,12 @@ export default function NavBar() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}>
-      <div className='flex h-12 w-12 relative'>
-        <img src={a13} className='absolute right-2 w-full h-full' alt='Logo' />
+      <div className='flex h-10 w-10 relative '>
+        <img
+          src={a13}
+          className=' w-full h-full rounded-full'
+          alt='Logo'
+        />
       </div>
 
       {/* Hamburger Icon */}
