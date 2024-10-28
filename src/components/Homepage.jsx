@@ -5,6 +5,7 @@ import '../style/Loader.css';
 // import a1 from '../assets/bb2.jpg';
 import a2 from '../assets/bb2.jpg';
 import Typewriter from 'typewriter-effect';
+import StarsCanvas from './Back2'
 
 
 
@@ -36,15 +37,11 @@ export default function Homepage() {
         </motion.div> */}
         
        <motion.div 
-  className="absolute inset-0 w-full h-[100vh] bg-cover bg-center"
-  style={{ 
-    y: y2, 
-    scale: scale2,
-    backgroundImage: `url(${a2})`,
-    backgroundSize: 'cover', // Ensures the image covers the whole div without distortion
-    backgroundPosition: 'center', // Centers the image
-  }}
->
+         className="absolute inset-0 w-full h-[100vh] bg-cover bg-center"
+         style={{ y: y2, scale: scale2, backgroundImage: `url(${a2})`, backgroundSize: 'cover', // Ensures the image covers the whole div without distortionbackgroundPosition: 'center', // Centers the image
+        }}
+        >
+          <StarsCanvas className="z-50 absolute"/>
 
           {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-85"></div>
