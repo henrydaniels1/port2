@@ -43,7 +43,7 @@ function App() {
     // Simulate a data fetching process
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1600);
   }, []);
 
   return (

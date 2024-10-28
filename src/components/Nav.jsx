@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import a13 from '../assets/logo7.png'
+import a13 from '../assets/logo8.png'
 import '../style/Nav.css'
 
 export default function NavBar() {
@@ -16,19 +16,15 @@ export default function NavBar() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}>
-      <div className='flex h-10 w-10 relative '>
-        <img
-          src={a13}
-          className=' w-full h-full rounded-full'
-          alt='Logo'
-        />
+      <div className='flex md:h-12 md:w-14 w-12 h-10 relative rounded-full '>
+        <img src={a13} className=' w-full h-full rounded-full' alt='Logo' />
       </div>
 
       {/* Hamburger Icon */}
       <div className='md:hidden'>
         <button
           onClick={toggleMenu}
-          className='text-white text-3xl focus:outline-none relative z-40'>
+          className='text-white nav-link text-3xl focus:outline-none relative z-40'>
           {isOpen ? (
             <span className='inline-block text-3xl'>&#x2715;</span> // Times icon
           ) : (
@@ -48,7 +44,7 @@ export default function NavBar() {
             <a
               key={index}
               href={`#${text.toLowerCase().replace(' ', '')}`}
-              className='nav-link text-xl text-white font-semibold mb-8 md:mb-0 transition-transform duration-300'
+              className='nav-link  text-xl text-white font-semibold mb-8 md:mb-0 transition-transform duration-300'
               onClick={toggleMenu}>
               {text}
             </a>
