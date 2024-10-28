@@ -12,7 +12,7 @@
   scale: .8;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000;
+  background-color: #111727;
   background-image: none;
   color: #fff;
   cursor: pointer;
@@ -147,7 +147,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  background-color: var(--clr);
+  background-color:#111727;
   color: #fff;
   /* border-radius: 10rem; */
   font-weight: 600;
@@ -181,7 +181,7 @@
 
 .btn-3:hover .button__icon-wrapper {
   color: white;
-  background-color: black;
+  background-color:#111727;
 }
 
 .btn-3 .button__icon-svg--copy {

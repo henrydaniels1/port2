@@ -37,6 +37,13 @@
   transition: color 0.3s, transform 0.3s;
 }
 
+.nav-link2 {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  transition: color 0.3s, transform 0.3s;
+}
+
 .nav-link::before {
   content: '';
   position: absolute;
@@ -58,4 +65,8 @@
 .nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.nav-font{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
