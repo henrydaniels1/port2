@@ -21,7 +21,7 @@ export default function NavBar() {
       </div> */}
 
       <div className=''>
-        <div className='flex font-extrabold text-3xl  nav-font'>
+        <div className='flex font-extrabold text-[2rem] nav-link2  nav-font'>
           <div className='relative '>
             <span className='text-[#8f44fd]'>C</span>
             <span className='absolute left-[58%] '>
