@@ -116,7 +116,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="w-[97%] lg:w-[95%] mx-auto space-y-16">
+    <div className="w-[95%] lg:w-[95%] mx-auto space-y-16">
   
       <div className="reveal2">
         <p className="md:text-4xl text-2xl font-bold text-teal-900 text-center">Latest Work</p>

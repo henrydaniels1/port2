@@ -196,7 +196,7 @@ opacity: 0.5;
 }
 
 .frame {
-  padding: 3px; /* Space between image and frame */
+  padding: 2.5px; /* Space between image and frame */
   border: 4px solid #004d40; /* Light grey border for modern frame */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 8px; /* Slightly rounded corners */

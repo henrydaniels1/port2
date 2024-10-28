@@ -3,7 +3,7 @@ import NavBar from './Nav';
 import Btn1 from '../icons/Btn1';
 import '../style/Loader.css';
 // import a1 from '../assets/bb2.jpg';
-import a2 from '../assets/a4.jpg';
+import a2 from '../assets/bb2.jpg';
 import Typewriter from 'typewriter-effect';
 
 

@@ -26,10 +26,8 @@ export default function Loader() {
         <div className='flex font-extrabold text-3xl nav-link2 nav-font'>
           <div className='relative '>
             <span className='text-[#8f44fd]'>C</span>
-            {/* <span className=''>H</span> */}
-            <span className='absolute left-[.85rem] '>
+            <span className='absolute left-[58%] '>
               <span className=''>E</span>
-              {/* <span className='inline-block text-2xl '>&#9776;</span> */}
             </span>
           </div>
 

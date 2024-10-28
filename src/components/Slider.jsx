@@ -37,7 +37,7 @@ export default function CarouselIndicatorsInside() {
 
   return (
       <>
-          <div className="w-[97%] lg:w-[95%] mx-auto space-y-16">
+          <div className="w-[95%] lg:w-[95%] mx-auto space-y-16">
           {/*<!-- Component: Carousel with indicators inside --> */ }
       <div className="reveal2">
         <p className="md:text-4xl text-2xl font-bold text-teal-900 text-center">
@@ -49,13 +49,14 @@ export default function CarouselIndicatorsInside() {
               
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
-          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+            <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d]
+           [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             <li  className="w-full  frame">
-                      
+              <div className="bg-red-500">      
               <img
                 src={img1}
                 className="m-auto max-h-full w-full max-w-full"/>
-                      
+                    </div>    
             </li>
             <li  className="w-full  frame">
                 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-// import a13 from '../assets/logo8.png'
+// import a13 from '../assets/logo11.png'
 import '../style/Nav.css'
 
 export default function NavBar() {
@@ -12,21 +12,20 @@ export default function NavBar() {
 
   return (
     <motion.nav
-      className='fixed top-0 w-[97%] lg:w-[95%] mx-auto py-4 bg-transparent z-30 flex justify-between items-center'
+      className='fixed top-0 w-[95%] lg:w-[95%] mx-auto py-4 bg-transparent z-30 flex justify-between items-center'
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}>
-      {/* <div className='flex md:h-12 md:w-14 w-12 h-10 relative rounded-full '>
+      {/* <div className='flex md:h-12 md:w-13 nav-link2 w-12 h-10 relative rounded-full '>
         <img src={a13} className=' w-full h-full rounded-full' alt='Logo' />
       </div> */}
+
       <div className=''>
-        <div className='flex font-extrabold text-3xl nav-link2 nav-font'>
+        <div className='flex font-extrabold text-3xl  nav-font'>
           <div className='relative '>
             <span className='text-[#8f44fd]'>C</span>
-            {/* <span className=''>H</span> */}
-            <span className='absolute left-[.85rem] '>
+            <span className='absolute left-[58%] '>
               <span className=''>E</span>
-              {/* <span className='inline-block text-2xl '>&#9776;</span> */}
             </span>
           </div>
 

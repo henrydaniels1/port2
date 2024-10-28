@@ -58,11 +58,11 @@ export default function Contact() {
     <section
       id="contact"
       ref={contactSectionRef}
-      className="animate-contact dark:text-gray-800 h-full w-[97%] lg:w-[95%] mx-auto flex flex-col lg:flex-row justify-between shadow-2xl opacity-0"
+      className="animate-contact dark:text-gray-800 h-full w-full lg:w-[95%] mx-auto flex flex-col lg:flex-row justify-between shadow-2xl opacity-0"
     >
       {/* Left Green Section */ }
      
-      <div className="relative bg-gradient-to-br  w-full lg:w-[50%] overflow-hidden lg:py-8 lg:px-8 py-4 px-2 md:px-5 flex flex-col justify-center text-black">
+      <div className="relative bg-gradient-to-br  w-full lg:w-[50%] overflow-hidden lg:py-8 lg:px-8 py-4 px-3 md:px-5 flex flex-col justify-center text-black">
          <img src={Map} className='absolute opacity-80 object-cover'></img>
         <div className="mb-8 z-30">
         

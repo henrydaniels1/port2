@@ -40,7 +40,7 @@ export const AboutUs = () => {
     <div
       id='About'
       ref={sectionRef}
-      className=' pt-0 mx-auto md:w-[95%] w-[97%] md:px-0 lg:px-0'>
+      className=' pt-0 mx-auto md:w-[95%] w-[95%] md:px-0 lg:px-0'>
       <div className='grid gap-10 md:grid-cols-2 '>
         <div
           className={`flex flex-col justify-center transition-all space-y-6 duration-1000 ease-out transform ${
