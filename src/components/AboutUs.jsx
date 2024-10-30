@@ -40,8 +40,8 @@ export const AboutUs = () => {
     <div
       id='About'
       ref={sectionRef}
-      className=' pt-0 mx-auto md:w-[95%] w-[95%] md:px-0 lg:px-0'>
-      <div className='grid gap-10 md:grid-cols-2 '>
+      className=' pt-0  rounded-lg md:px-0 lg:px-0 bg-[#f5f5f5] '>
+      <div className='grid mx-auto md:w-[95%] w-[95%] gap-10 md:grid-cols-2 py-16 '>
         <div
           className={`flex flex-col justify-center transition-all space-y-6 duration-1000 ease-out transform ${
             isVisible
@@ -142,12 +142,10 @@ export const AboutUs = () => {
         <div
           className={`flex items-center justify-between transition-all duration-700 ease-out transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-            } lg:pl-8` }>
-          
+          } lg:pl-8`}>
           <div className='flex flex-col items-end gap-6 pr-6 '>
             <div className='transform transition-transform duration-500 hover:scale-105'>
-              
-              <SimpleParallax orientation='right' >
+              <SimpleParallax orientation='right'>
                 <img
                   className='object-cover rounded-xl shadow-md h-48 w-48 md:w-48 xl:h-56 xl:w-56'
                   src={Pic1}
@@ -166,7 +164,6 @@ export const AboutUs = () => {
 
           <div className='rounded-xl  flex justify-self-end transform transition-transform duration-500 hover:scale-105'>
             <SimpleParallax orientation='left'>
-             
               <img
                 className='object-cover  shadow-md h-52 w-48 lg:h-64 lg:w-64 xl:h-80 xl:w-80'
                 src={Pic3}

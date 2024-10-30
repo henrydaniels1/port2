@@ -1,20 +1,25 @@
 /* eslint-disable react/no-unknown-property */
-'use client'
-
 import  { useState, useRef, Suspense } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Preload } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
+import * as random from 'maath/random'
 
 const StarBackground = (props) => {
   const ref = useRef()
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  )
+
+  // Generate positions with a fallback to avoid NaN values
+  const [sphere] = useState(() => {
+    const positions = random.inSphere(new Float32Array(100), { radius: 1.2 })
+    return positions.every((pos) => !isNaN(pos))
+      ? positions
+      : new Float32Array([0, 0, 0])
+  })
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 11
-    ref.current.rotation.y -= delta / 25
+    if (ref.current) {
+      ref.current.rotation.x -= delta / 11
+      ref.current.rotation.y -= delta / 25
+    }
   })
 
   return (
@@ -23,7 +28,7 @@ const StarBackground = (props) => {
         <PointMaterial
           transparent
           color='#fff'
-          size={0.009}
+          size={0.05}
           sizeAttenuation={true}
           depthWrite={false}
         />
