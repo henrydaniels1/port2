@@ -10,28 +10,13 @@ import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
 
 
-// import { EarthModel } from './2d/Earth'
-// import ErrorBoundary from './3d/ErrorHandling'
-// import { Canvas } from '@react-three/fiber'
-// import {Environment, OrbitControls} from '@react-three/drei'
-// import  Earth from '../example/Earth.jsx'
-
 export default function Landing1() {
   return (
     <div className='relative space-y-20 stylish-regular overflow-hidden '>
       <Homepage />
       <ExampleComponent />
 
-      {/* < Earth/> */}
-      {/*   
-    <ErrorBoundary>  <Canvas>
-        <ambientLight />
-        <OrbitControls />
-   
-          
-       <EarthModel />
-        <Environment></Environment>
-      </Canvas></ErrorBoundary> */}
+     
 
       <StarsCanvas className='z-50 absolute' />
 
