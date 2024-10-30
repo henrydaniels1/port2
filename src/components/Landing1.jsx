@@ -16,8 +16,6 @@ export default function Landing1() {
       <Homepage />
       <ExampleComponent />
 
-     
-
       <StarsCanvas className='z-50 absolute' />
 
       <AboutUs />
