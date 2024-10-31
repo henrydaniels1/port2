@@ -1,17 +1,18 @@
+/* Resetting styles for .btn-1 and its pseudo-elements */
 .btn-1,
 .btn-1 *,
-.btn-1 :after,
-.btn-1 :before,
 .btn-1:after,
 .btn-1:before {
   border: 0 solid;
   box-sizing: border-box;
 }
 
+/* Button styles */
 .btn-1 {
-  scale: .8;
+  scale: 0.8;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
+  appearance: button; /* Standard property added for compatibility */
   background-color: #491498;
   background-image: none;
   color: #fff;
@@ -23,6 +24,7 @@
   line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: radial-gradient(#000, #fff); /* Standard property added for compatibility */
   padding: 0;
 }
 
@@ -34,10 +36,12 @@
   outline: auto;
 }
 
+/* SVG styling for the button */
 .btn-1 svg {
   display: block;
-  vertical-align: middle;
+  /* Removed vertical-align since it's ignored with display: block */
 }
+
 
 .btn-1 [hidden] {
   display: none;
