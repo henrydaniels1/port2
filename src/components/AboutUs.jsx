@@ -98,11 +98,11 @@ export const AboutUs = () => {
 
           <div className='max-w-xl mb-6'>
             <p className='reveal3 text-base text-gray-700 md:text-lg text-justify'>
-              I am an experienced web developer with 4 years of expertise in
-              JavaScript, React, and Three.js. I create responsive, visually
-              appealing websites that enhance business performance. Driven by a
-              commitment to innovation and quality, I continuously refine my
-              skills and stay ahead of industry trends.
+              I am web developer with 4 years of experience specializing in
+              JavaScript, React, and Three.js. I craft responsive, visually
+              engaging websites designed to enhance business performance and user experience.
+              Commitment to innovation and quality, I continuously hone my
+              skills to stay at the forefront of industry trends.
             </p>
             {/* <BoxRevealDemo/> */}
           </div>
