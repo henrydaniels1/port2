@@ -1,0 +1,10 @@
+/* styles.css */
+.responsive-canvas {
+  width: 100%; /* Full width */
+  height: 10rem; /* Default to 10rem */
+
+  /* Media query for large screens */
+  @media (min-width: 1024px) {
+    height: 20rem;
+  }
+}

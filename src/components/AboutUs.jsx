@@ -1,11 +1,12 @@
 
-import SimpleParallax from "simple-parallax-js";
+// import SimpleParallax from "simple-parallax-js";
 
 import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
 import Pic2 from '../assets/bb2.jpg'
-import Pic3 from '../assets/c.jpg'
+// import Pic3 from '../assets/c.jpg'
 import '../style/Button.css'
+import Earth from './Earth'
 
 // import { BoxRevealDemo } from "./BoxReveal";
 
@@ -140,37 +141,42 @@ export const AboutUs = () => {
         </div>
 
         <div
-          className={`flex items-center justify-between transition-all duration-700 ease-out transform ${
+          className={` flex items-center  justify-between lg:justify-end transition-all duration-700 ease-out transform ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
-          } lg:pl-8`}>
-          <div className='flex flex-col items-end gap-6 pr-6 '>
-            <div className='transform transition-transform duration-500 hover:scale-105'>
-              <SimpleParallax orientation='right'>
-                <img
-                  className='object-cover rounded-xl shadow-md h-48 w-48 md:w-48 xl:h-56 xl:w-56'
-                  src={Pic1}
-                  alt='Decorative image 1'
-                />
-              </SimpleParallax>
-            </div>
-            <div className='transform transition-transform duration-500 hover:scale-105'>
+          } lg:pl-4`}>
+          <div className='flex flex-col items-end gap-5  lg:pr-[4rem] pr-2'>
+            <div className='transform transition-transform duration-500 hover:scale-105  h-[10rem] w-[10rem] lg:w-48 xl:h-56 xl:w-56'>
+              {/* <SimpleParallax orientation='right'>
+               
+              </SimpleParallax> */}
               <img
-                className='object-cover rounded-xl shadow-md h-28 w-28 md:h-32 md:w-32 xl:h-40 xl:w-40'
+                className='object-cover object-right rounded-xl shadow-md  h-full w-full'
+                src={Pic1}
+                alt='Decorative image 1'
+              />
+            </div>
+
+            <div className='transform transition-transform duration-500 hover:scale-105 h-28 w-28 lg:h-32 md:w-32 xl:h-40 xl:w-40'>
+              <img
+                className='object-cover rounded-xl shadow-md h-full w-full'
                 src={Pic2}
                 alt='Decorative image 2'
               />
             </div>
           </div>
 
-          <div className='rounded-xl  flex justify-self-end transform transition-transform duration-500 hover:scale-105'>
+          <div className='rounded-xl'>
+            <Earth className='h-full w-full' />
+          </div>
+
+          {/* <div className='rounded-xl h-52 w-48 lg:h-64 lg:w-64 xl:h-80 xl:w-80  flex justify-self-end transform transition-transform duration-500 hover:scale-105'>
             <SimpleParallax orientation='left'>
               <img
                 className='object-cover  shadow-md h-52 w-48 lg:h-64 lg:w-64 xl:h-80 xl:w-80'
                 src={Pic3}
                 alt='Decorative image 3'
               />
-            </SimpleParallax>
-          </div>
+            </SimpleParallax> </div> */}
         </div>
       </div>
     </div>

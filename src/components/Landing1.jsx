@@ -9,6 +9,7 @@ import WordCloudChart from './Word'
 import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
 // import Wrap from './2d/Wrap'
+// import Earth from './Earth'
 
 
 export default function Landing1() {
@@ -19,7 +20,8 @@ export default function Landing1() {
 
       <StarsCanvas className='z-50 absolute' />
     
-      {/* <Wrap/> */}
+      {/* <Wrap/> */ }
+      {/* <Earth/> */}
       <AboutUs />
       <WordCloudChart />
       <Projects />
