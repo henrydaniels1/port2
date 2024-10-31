@@ -1,0 +1,120 @@
+/* Container styling with gradient overlays */
+.white {
+  position: relative;
+  height: 100vh;
+}
+
+.white::before {
+  content: '';
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  /* background-image: linear-gradient(-180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); */
+}
+
+.white::after {
+  content: '';
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  /* background-image: linear-gradient(0deg, #EBEBEB 0%, rgba(235, 235, 235, 0) 100%); */
+}
+
+/* Squares container */
+.squares {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Squares styling and animation */
+.square {
+  width: 1em;
+  height: 1em;
+  background: #d4d3d3;
+  align-self: flex-end;
+  animation: squares 9.5s linear infinite;
+  transform: translateY(100%);
+}
+
+/* Each square has a unique size, blur, and animation duration */
+.square-2 {
+  width: 3em;
+  height: 1.5em;
+  animation-delay: 1s;
+  animation-duration: 17s;
+  filter: blur(5px);
+}
+
+.square-3 {
+  width: 1em;
+  height: 2em;
+  animation-delay: 1.5s;
+    filter: blur(3px);
+
+  animation-duration: 8s;
+}
+
+.square-4 {
+  width: 1.5em;
+  height: 1em;
+  animation-delay: 0.5s;
+  animation-duration: 13s;
+  filter: blur(3px);
+}
+
+.square-5 {
+  width: 2em;
+  height: 1.25em;
+  animation-delay: 4s;
+  animation-duration: 11s;
+  filter: blur(2px);
+}
+
+.square-6 {
+  width: 2em;
+  height: 2.5em;
+  animation-delay: 2s;
+  animation-duration: 9s;
+  filter: blur(1px);
+}
+
+.square-7 {
+  width: 2em;
+  height: 5em;
+  animation-duration: 12s;
+  filter: blur(2.5px);
+}
+
+.square-8 {
+  width: 3em;
+  height: 1em;
+  animation-delay: 5s;
+  animation-duration: 18s;
+  filter: blur(6px);
+}
+
+.square-9 {
+  width: 2.4em;
+  height: 3em;
+  animation-delay: 6s;
+  animation-duration: 12s;
+  filter: blur(0.5px);
+}
+
+/* Animation keyframes for square movement */
+@keyframes squares {
+  from {
+    transform: translateY(100%) rotate(-50deg);
+  }
+  to {
+    transform: translateY(calc(-100vh - 100%)) rotate(20deg);
+  }
+}

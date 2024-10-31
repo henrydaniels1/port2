@@ -10,7 +10,7 @@ const StarBackground = (props) => {
     let positions = null
     try {
       // Generate positions with fallback to avoid NaN values
-      positions = random.inSphere(new Float32Array(150), { radius: 1.2 })
+      positions = random.inSphere(new Float32Array(60), { radius: 1.2 })
 
       // Check if all positions are valid numbers
       if (!positions.every((pos) => !isNaN(pos))) {

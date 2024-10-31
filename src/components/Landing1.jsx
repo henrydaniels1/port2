@@ -8,6 +8,7 @@ import ExampleComponent from '../example/Scroll'
 import WordCloudChart from './Word'
 import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
+// import Wrap from './2d/Wrap'
 
 
 export default function Landing1() {
@@ -17,7 +18,8 @@ export default function Landing1() {
       <ExampleComponent />
 
       <StarsCanvas className='z-50 absolute' />
-
+    
+      {/* <Wrap/> */}
       <AboutUs />
       <WordCloudChart />
       <Projects />

@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <motion.nav
-      className='fixed top-0 w-[95%] lg:w-[95%] mx-auto py-4 bg-transparent z-30 flex justify-between items-center'
+      className='fixed top-0 w-[95%] lg:w-[95%] mx-auto py-4 bg-transparent z-[100] flex justify-between items-center'
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}>
@@ -57,7 +57,7 @@ export default function NavBar() {
             <a
               key={index}
               href={`#${text.toLowerCase().replace(' ', '')}`}
-              className='nav-link  text-xl text-white font-semibold mb-8 md:mb-0 transition-transform duration-300'
+              className='nav-link   text-xl text-white font-semibold mb-8 md:mb-0 transition-transform duration-300'
               onClick={toggleMenu}>
               {text}
             </a>

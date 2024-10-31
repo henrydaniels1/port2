@@ -3,8 +3,9 @@ import NavBar from './Nav';
 import Btn1 from '../icons/Btn1';
 import '../style/Loader.css';
 // import a1 from '../assets/bb2.jpg';
-import a2 from '../assets/bb2.jpg';
+// import a2 from '../assets/bb2.jpg';
 import Typewriter from 'typewriter-effect';
+import AnimatedSquares from './3d/Sphere'
 
 
 
@@ -39,14 +40,18 @@ export default function Homepage() {
           style={{
             y: y2,
             scale: scale2,
-            backgroundImage: `url(${a2})`,
-            backgroundSize: 'cover', 
+            // backgroundImage: `url(${a2})`,
+            // backgroundSize: 'cover',
           }}>
-
-       
-          <div className='absolute inset-0 bg-black bg-opacity-75'></div>
+           <AnimatedSquares />
         </motion.div>
 
+
+        {/* <div className=' absolute inset-0 w-full h-[100vh] bg-cover bg-center z-10'>
+          <AnimatedSquares />
+        </div> */}
+
+        <div className='absolute inset-0 bg-black bg-opacity-45'></div>
         {/* Floating Navigation Bar */}
         <NavBar />
 
@@ -70,7 +75,7 @@ export default function Homepage() {
         </motion.h1>
 
         <motion.p
-          className='text-2xl mb-8 relative z-10 text-center lg:tracking-widest'
+          className='text-2xl mb-8 relative z-10 text-center lg:tracking-widest leSpinInLeft '
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}>
