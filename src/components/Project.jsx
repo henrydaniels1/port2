@@ -119,7 +119,7 @@ const Project = () => {
     <div className="w-[95%] lg:w-[95%] mx-auto space-y-16">
   
       <div className="reveal2">
-        <p className="md:text-4xl text-2xl font-bold text-teal-900 text-center">Latest Work</p>
+        <p className="md:text-4xl text-3xl font-bold text-teal-900 text-center">Latest Work</p>
       </div>
 
       <div className="h-full shadow-2xl">

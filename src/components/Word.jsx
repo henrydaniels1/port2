@@ -83,7 +83,7 @@ const WordCloudChart = () => {
   return (
     <div className="w-[90%] lg:w-[95%] mx-auto">
       <div className="reveal2">
-        <p className="md:text-4xl text-2xl font-bold text-teal-900 text-center">Skills</p>
+        <p className="md:text-4xl text-3xl font-bold text-teal-900 text-center">Skills</p>
       </div>
       <div className="reveal3 w-full h-96"  ref={ chartRef }></div>
     </div>  // Tailwind styles
