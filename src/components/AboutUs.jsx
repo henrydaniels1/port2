@@ -6,6 +6,7 @@ import Pic1 from '../assets/a4.jpg'
 import Pic2 from '../assets/bb2.jpg'
 // import Pic3 from '../assets/c.jpg'
 import '../style/Button.css'
+import '../style/Nav.css'
 import Earth from './Earth'
 
 // import { BoxRevealDemo } from "./BoxReveal";
@@ -97,12 +98,13 @@ export const AboutUs = () => {
           </div>
 
           <div className='max-w-xl mb-6'>
-            <p className='reveal3 text-base text-gray-700 md:text-lg text-justify'>
+            <p className='reveal3 text-base text-gray-700 md:text-lg text-justify nav-font'>
               I am web developer with 4 years of experience specializing in
               JavaScript, React, and Three.js. I craft responsive, visually
-              engaging websites designed to enhance business performance and user experience.
-              Commitment to innovation and quality, I continuously hone my
-              skills to stay at the forefront of industry trends.
+              engaging websites designed to enhance business performance and
+              user experience. Commitment to innovation and quality, I
+              continuously hone my skills to stay at the forefront of industry
+              trends.
             </p>
             {/* <BoxRevealDemo/> */}
           </div>
@@ -112,7 +114,7 @@ export const AboutUs = () => {
               style={{ '--clr': '#000' }}
               className='btn-3 px-4 py-2 rounded-2xl'
               href='#'>
-              <p className='md:text-xl sm:text-lg'> learn more</p>
+              <p className='md:text-xl sm:text-lg nav-font'> learn more</p>
               <span className='button__icon-wrapper p-2 '>
                 <svg
                   width='10'

@@ -8,19 +8,20 @@ import ExampleComponent from '../example/Scroll'
 import WordCloudChart from './Word'
 import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
+import '../style/Nav.css'
 // import Wrap from './2d/Wrap'
 // import Earth from './Earth'
 
 
 export default function Landing1() {
   return (
-    <div className='relative space-y-20 stylish-regular overflow-hidden '>
+    <div className='relative space-y-20 stylish-regular overflow-hidden nav-font'>
       <Homepage />
       <ExampleComponent />
 
       <StarsCanvas className='z-50 absolute' />
-    
-      {/* <Wrap/> */ }
+
+      {/* <Wrap/> */}
       {/* <Earth/> */}
       <AboutUs />
       <WordCloudChart />

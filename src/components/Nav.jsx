@@ -52,7 +52,7 @@ export default function NavBar() {
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } md:static md:bg-transparent md:translate-x-0 md:flex md:flex-row md:items-center md:justify-end`}
         style={{ backdropFilter: 'blur(10px)' }}>
-        <div className='w-full md:w-auto flex flex-col md:flex-row items-center md:space-x-6'>
+        <div className='w-full md:w-auto flex flex-col nav-font md:flex-row items-center md:space-x-6'>
           {['About Me', 'Projects', 'Contact'].map((text, index) => (
             <a
               key={index}
