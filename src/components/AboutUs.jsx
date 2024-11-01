@@ -167,7 +167,7 @@ export const AboutUs = () => {
             </div>
           </div>
 
-          <div className='rounded-xl'>
+          <div className='rounded-xl transform transition-transform duration-500 hover:scale-105 '>
             <Earth className='h-full w-full' />
           </div>
 
