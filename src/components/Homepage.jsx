@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import NavBar from './Nav';
 import Btn1 from '../icons/Btn1';
 import '../style/Loader.css';
+import '../style/Nav.css';
 // import a1 from '../assets/bb2.jpg';
 // import a2 from '../assets/bb2.jpg';
 import Typewriter from 'typewriter-effect';
@@ -43,9 +44,8 @@ export default function Homepage() {
             // backgroundImage: `url(${a2})`,
             // backgroundSize: 'cover',
           }}>
-           <AnimatedSquares />
+          <AnimatedSquares />
         </motion.div>
-
 
         {/* <div className=' absolute inset-0 w-full h-[100vh] bg-cover bg-center z-10'>
           <AnimatedSquares />
@@ -75,7 +75,7 @@ export default function Homepage() {
         </motion.h1>
 
         <motion.p
-          className='text-2xl mb-8 relative z-10 text-center lg:tracking-widest leSpinInLeft '
+          className='text-2xl mb-8 relative z-10 nav-font  text-center lg:tracking-widest leSpinInLeft '
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}>

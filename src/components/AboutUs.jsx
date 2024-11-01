@@ -92,7 +92,7 @@ export const AboutUs = () => {
                 strokeLinejoin='round'
               />
             </svg>
-            <p className='font-semibold tracking-wider text-teal-900 lg:text-4xl md:text-4xl text-2xl '>
+            <p className='font-semibold tracking-wider  text-teal-900 lg:text-4xl md:text-4xl text-2xl '>
               About Me
             </p>
           </div>

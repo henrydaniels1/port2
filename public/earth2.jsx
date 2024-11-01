@@ -27,7 +27,7 @@ const EarthCanvas = () => {
       <directionalLight position={[-5, -5, -5]} intensity={0.3} />
 
       {/* Model */}
-      <primitive object={earth.scene} scale={0.08} position={[0, 0, 0]} />
+      <primitive object={earth.scene} scale={0.088} position={[0, 0, 0]} />
     </Canvas>
   )
 }
