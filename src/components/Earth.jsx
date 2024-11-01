@@ -1,4 +1,4 @@
-import EarthCanvas from "../../public/earth2"
+import EarthCanvas from "../../public/earth"
 
 
 export default function Earth() {
