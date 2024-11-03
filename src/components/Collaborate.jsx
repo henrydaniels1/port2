@@ -40,7 +40,7 @@ export default function Component() {
         {/* Marquee Section */}
         <div className='w-full overflow-hidden bg-purple-500 py-4'>
           <div className='flex animate-marquee whitespace-nowrap text-white'>
-            {Array(4)
+            {Array(5)
               .fill([
                 <IconWrapper key='react'>React</IconWrapper>,
                 <IconWrapper key='vue'>Framer</IconWrapper>,
