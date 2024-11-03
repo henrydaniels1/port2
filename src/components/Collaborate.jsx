@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import '../style/Nav.css'
+import Idea from '../icons/Idea'
 
 export default function Component() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
@@ -33,9 +34,17 @@ export default function Component() {
 
       {/* Main Content */}
       <div className='flex flex-col justify-center items-center'>
-        <h1 className='mb-8 text-center text-3xl font-bold'>
-          Let&apos;s collaborate together on that amazing idea/project
-        </h1>
+        <div className='relative mb-16  flex'>
+          <h1 className='text-center text-3xl lg:text-4xl font-bold z-20'>
+            Let&apos;s collaborate together on that amazing idea/project
+          </h1>
+          <div className='absolute right-[50%] left-[50%]  z-10'>
+            <div className='h-12 w-12 flex items-center justify-center'>
+            
+              <Idea className='h-full w-full' />
+            </div>
+          </div>
+        </div>
 
         {/* Marquee Section */}
         <div className='w-full overflow-hidden bg-purple-500 py-4'>
