@@ -57,7 +57,7 @@ export default function Homepage() {
 
         {/* Main Content */}
         <motion.h1
-          className='lg:text-7xl text-4xl text-center lg:tracking-widest font-bold mb-4 relative z-10'
+          className=' lg:text-7xl text-4xl text-center lg:tracking-widest font-bold mb-4 relative z-10'
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}>

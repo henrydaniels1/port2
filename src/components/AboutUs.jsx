@@ -3,13 +3,14 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Pic1 from '../assets/a4.jpg'
-import Pic2 from '../assets/bb2.jpg'
+// import Pic2 from '../assets/bb2.jpg'
 // import Pic3 from '../assets/c.jpg'
 import '../style/Button.css'
 import '../style/Nav.css'
 import Earth from './Earth'
+import Earth2 from './ReactLogo'
 
-// import { BoxRevealDemo } from "./BoxReveal";
+
 
 export const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,7 +93,7 @@ export const AboutUs = () => {
                 strokeLinejoin='round'
               />
             </svg>
-            <p className='font-semibold tracking-wider  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
+            <p className=' font-semibold tracking-wider  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
               About Me
             </p>
           </div>
@@ -100,7 +101,7 @@ export const AboutUs = () => {
           <div className='max-w-xl mb-6'>
             <p className='reveal3 text-base text-gray-700 md:text-lg text-justify nav-font'>
               I am web developer with 4 years of experience specializing in
-              JavaScript, React, and Three.js. I craft responsive, visually
+              JavaScript, React, Web3 and Three.js. I craft responsive, visually
               engaging websites designed to enhance business performance and
               user experience. Commitment to innovation and quality, I
               continuously hone my skills to stay at the forefront of industry
@@ -158,13 +159,16 @@ export const AboutUs = () => {
               />
             </div>
 
-            <div className='transform transition-transform duration-500 hover:scale-105 h-28 w-28 lg:h-32 md:w-32 xl:h-40 xl:w-40'>
-              <img
+            <div className='transform flex justify-end transition-transform duration-500 hover:scale-105 h-28 w-28 lg:h-32 md:w-32 xl:h-40 xl:w-40'>
+              {/* <img
                 className='object-cover rounded-xl shadow-md h-full w-full'
                 src={Pic2}
                 alt='Decorative image 2'
-              />
+              /> */}
+
+              <Earth2/>
             </div>
+
           </div>
 
           <div className='rounded-xl transform transition-transform duration-500 hover:scale-105 '>
