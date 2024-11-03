@@ -87,7 +87,7 @@
 
 /* Nav.css */
 body, .hide-default-cursor {
-  cursor: none; /* Hide the default cursor */
+  cursor: none;
 }
 
 @keyframes marquee {

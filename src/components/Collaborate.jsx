@@ -24,7 +24,8 @@ export default function Component() {
     <div className='relative hide-default-cursor overflow-hidden bg-gray-100 pt-16'>
       {/* Custom Cursor */}
       <div
-        className='pointer-events-none fixed left-0 top-0 z-50 h-12 w-12 rounded-full bg-purple-400 mix-blend-difference transition-transform duration-100 ease-out'
+              className='pointer-events-none lg:flex fixed hidden left-0 top-0 z-50 h-12 w-12 rounded-full
+         bg-purple-400 mix-blend-difference transition-transform duration-100 ease-out'
         style={{
           transform: `translate(${cursorPosition.x - 24}px, ${
             cursorPosition.y - 24
