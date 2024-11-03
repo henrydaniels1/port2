@@ -51,8 +51,8 @@ export const AboutUs = () => {
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 -translate-y-20'
           } md:pr-8 xl:pr-0 lg:max-w-lg`}>
-          <div className='reveal2 flex items-center space-x-4 mb-4 rounded-full bg-teal-accent-400'>
-            <svg className='text-teal-900 w-7 h-7' viewBox='0 0 24 24'>
+          <div className='reveal2 flex items-center space-x-4 mb-4 rounded-full bg-teal-accent-400 z-20'>
+            <svg className='text-teal-900 w-7 h-7 z-20' viewBox='0 0 24 24'>
               <polyline
                 fill='none'
                 stroke='currentColor'
@@ -93,13 +93,13 @@ export const AboutUs = () => {
                 strokeLinejoin='round'
               />
             </svg>
-            <p className=' font-semibold tracking-wider  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
+            <p className=' font-semibold tracking-wider z-20  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
               About Me
             </p>
           </div>
 
           <div className='max-w-xl mb-6'>
-            <p className='reveal3 text-base text-gray-700 md:text-lg text-justify nav-font'>
+            <p className='reveal3 text-base text-gray-700 z-50 md:text-lg text-justify nav-font'>
               I am web developer with 4 years of experience specializing in
               JavaScript, React, Web3 and Three.js. I craft responsive, visually
               engaging websites designed to enhance business performance and
@@ -166,9 +166,8 @@ export const AboutUs = () => {
                 alt='Decorative image 2'
               /> */}
 
-              <Earth2/>
+              <Earth2 />
             </div>
-
           </div>
 
           <div className='rounded-xl transform transition-transform duration-500 hover:scale-105 '>

@@ -7,6 +7,7 @@ import '../style/Nav.css';
 // import a2 from '../assets/bb2.jpg';
 import Typewriter from 'typewriter-effect';
 import AnimatedSquares from './3d/Sphere'
+import '../style/Font.css'
 
 
 
@@ -57,9 +58,10 @@ export default function Homepage() {
 
         {/* Main Content */}
         <motion.h1
-          className=' lg:text-7xl text-4xl text-center lg:tracking-widest font-bold mb-4 relative z-10'
+          className=' lg:text-[4rem] text-3xl text-center lg:tracking-widest font-bold mb-8 relative z-20'
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
+          style={{ fontFamily: 'YourFont3' }}
           transition={{ duration: 1 }}>
           <Typewriter
             options={{
@@ -75,7 +77,7 @@ export default function Homepage() {
         </motion.h1>
 
         <motion.p
-          className='text-2xl mb-8 relative z-10 nav-font  text-center lg:tracking-widest leSpinInLeft '
+          className='text-2xl mb-8 relative z-20 nav-font  text-center lg:tracking-widest leSpinInLeft '
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}>
@@ -84,7 +86,7 @@ export default function Homepage() {
 
         {/* Call-to-Action Button */}
         <motion.div
-          className='relative z-10 mt-8'
+          className='relative z-20 mt-8'
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}

@@ -1,0 +1,32 @@
+/* src/fonts/fonts.css */
+@font-face {
+  font-family: 'YourFont';
+  src: url('../fonts/Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal; /* or bold for bold fonts */
+  font-style: normal;  /* or italic for italic fonts */
+}
+
+@font-face {
+  font-family: 'YourFont2';
+  src: url('../fonts/Fonts/MonumentExtended/MonumentExtended-Regular.otf') format('truetype');
+  font-weight: normal; /* or bold for bold fonts */
+  font-style: normal;  /* or italic for italic fonts */
+}
+@font-face {
+  font-family: 'YourFont3';
+  src: url('../fonts/Fonts/911Porscha/911porschav3.ttf') format('truetype');
+  font-weight: normal; /* or bold for bold fonts */
+  font-style: normal;  /* or italic for italic fonts */
+}
+@font-face {
+  font-family: 'YourFont4';
+  src: url('../fonts/Fonts/Nagasaki/nagasaki.ttf') format('truetype');
+  font-weight: normal; /* or bold for bold fonts */
+  font-style: normal;  /* or italic for italic fonts */
+}
+@font-face {
+  font-family: 'YourFont5';
+  src: url('../fonts/Fonts/PeckhamPress/PeckhamPress-Trial.otf') format('truetype');
+  font-weight: normal; /* or bold for bold fonts */
+  font-style: normal;  /* or italic for italic fonts */
+}

@@ -82,3 +82,33 @@
   font-style: normal;
  
 }
+
+
+
+/* Nav.css */
+body, .hide-default-cursor {
+  cursor: none; /* Hide the default cursor */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* @media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+} */

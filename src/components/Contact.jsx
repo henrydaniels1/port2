@@ -65,7 +65,7 @@ export default function Contact() {
       <div className='relative bg-gradient-to-br  w-full lg:w-[50%] overflow-hidden lg:py-8 lg:px-8 py-4 px-3 md:px-5 flex flex-col justify-center text-black'>
         <img src={Map} className='absolute opacity-80 object-cover'></img>
         <div className='mb-8 z-30'>
-          <p className='reveal2 md:text-4xl text-3xl  font-bold mb-8 text-teal-900'>
+          <p className='reveal2 md:text-4xl text-3xl z-20  font-bold mb-8 text-teal-900'>
             Contact Us
           </p>
           <p className='text-md font-medium nav-font'>

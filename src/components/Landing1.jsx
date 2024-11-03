@@ -9,6 +9,7 @@ import WordCloudChart from './Word'
 import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
 import '../style/Nav.css'
+import Component from './Collaborate'
 // import Wrap from './2d/Wrap'
 // import Earth from './Earth'
 
@@ -27,6 +28,7 @@ export default function Landing1() {
       <WordCloudChart />
       <Projects />
       <CarouselIndicatorsInside />
+      <Component/>
       <Contact />
       <Footer />
     </div>
