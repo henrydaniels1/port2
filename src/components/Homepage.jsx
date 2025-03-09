@@ -81,8 +81,9 @@ export default function Homepage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}>
-          Web Developer | Foreign Exchange Trader
+          FullStack Web Developer 
         </motion.p>
+        {/* | Foreign Exchange Trader */}
 
         {/* Call-to-Action Button */}
         <motion.div

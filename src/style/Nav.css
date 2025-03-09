@@ -94,15 +94,19 @@ body, .hide-default-cursor {
   0% {
     transform: translateX(100%);
   }
+  50%{
+  transform: translateX(-100%);
+
+  }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
 .animate-marquee {
   display: flex;
   gap: 2rem;
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite;
   white-space: nowrap;
   will-change: transform;
 }

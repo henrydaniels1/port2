@@ -49,7 +49,11 @@ export default function Contact() {
         observer.unobserve(contactSectionRef.current);
       }
     };
-  }, []);
+  }, [] );
+  
+  // eslint-disable-next-line no-undef
+  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+
 
   if (state.succeeded) {
     return <p className="text-center text-lg font-bold text-green-600">Thanks for Contacting!</p>;
@@ -66,10 +70,10 @@ export default function Contact() {
         <img src={Map} className='absolute opacity-80 object-cover'></img>
         <div className='mb-8 z-30'>
           <p className='reveal2 md:text-4xl text-3xl z-20  font-bold mb-8 text-teal-900'>
-            Contact Us
+            Contact Me
           </p>
           <p className='text-md font-medium nav-font'>
-            We&apos;d love to hear from you! Reach out to us at:
+            I&apos;d love to hear from you! Reach out to me at:
           </p>
         </div>
         <div className='space-y-8  z-30'>
@@ -83,7 +87,7 @@ export default function Contact() {
           </div>
           <div className='flex items-center space-x-2'>
             <Phone />
-            <p className='text-gray-400'>08085833176</p>
+            <p className='text-gray-400'>{phoneNumber}</p>
           </div>
 
           <div className='flex items-center space-x-2'>
