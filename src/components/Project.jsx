@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
-// import a13 from '../assets/ChedFx.png';
+import a13 from '../assets/ChedFx.png';
 import b1 from '../assets/vid3.mp4';
 import '../style/Fxstyle.css'
 // import ExampleComponent from '../example/Scroll';
@@ -24,14 +24,14 @@ const data = [
     alt: 'Bricks and steels',
     link: 'https://brickss-sigma.vercel.app/',
   },
-  // {
-  //   imageUrl: a13,
-  //   date: 'In Progress',
-  //   title: 'ChedFx',
-  //   description: 'A Forex Training website',
-  //   alt: 'ChedFx',
-  //   link: 'https://ched-fx.vercel.app/',
-  // },
+  {
+    imageUrl: a13,
+    date: 'In Progress',
+    title: 'ChedFx',
+    description: 'A Forex Training website',
+    alt: 'ChedFx',
+    link: 'https://ched-fx.vercel.app/',
+  },
 ];
 
 // Card component

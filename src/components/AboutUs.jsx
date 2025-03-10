@@ -104,7 +104,7 @@ export const AboutUs = () => {
               JavaScript, React, Web3, and Three.js. What sets me apart is my
               ability to merge technical expertise with creativity, crafting
               visually stunning, highly interactive, and performance-optimized
-              web experiences.<br></br> I don’t just build websites—I create digital
+              web experiences.<br></br> I don’t just build websites, I create digital
               experiences that enhance user engagement and drive business
               growth. With a strong commitment to innovation and a keen eye for
               detail, I continuously refine my skills to stay ahead of industry

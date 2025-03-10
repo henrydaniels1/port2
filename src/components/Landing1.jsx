@@ -9,7 +9,7 @@ import WordCloudChart from './Word'
 import CarouselIndicatorsInside from './Slider'
 import StarsCanvas from './Back2'
 import '../style/Nav.css'
-// import Component from './Collaborate'
+import Component from './Collaborate'
 // import Huawei from "./Huawei";
 // import Wrap from './2d/Wrap'
 // import Earth from './Earth'
@@ -30,7 +30,7 @@ export default function Landing1() {
       <WordCloudChart />
       <Projects />
       <CarouselIndicatorsInside />
-      {/* <Component/> */}
+      <Component/>
       <Contact />
       <Footer />
     </div>
