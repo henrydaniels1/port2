@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-// import a13 from '../assets/logo11.png'
+import a13 from '/l3.png'
 import '../style/Nav.css'
 
 export default function NavBar() {
@@ -15,23 +15,18 @@ export default function NavBar() {
       className='fixed top-0 w-[95%] lg:w-[95%] mx-auto py-4 bg-transparent z-[100] flex justify-between items-center'
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}>
-      {/* <div className='flex md:h-12 md:w-13 nav-link2 w-12 h-10 relative rounded-full '>
-        <img src={a13} className=' w-full h-full rounded-full' alt='Logo' />
-      </div> */}
-
+      transition={ { duration: 0.8 } }>
+      
+      <div className='flex md:h-12 md:w-13 nav-link2 w-26 h-12 relative '>
+        <img src={a13} className=' w-full h-full ' alt='Logo' />
+      </div>
+{/* 
       <div className=''>
         <div className='flex font-extrabold text-[2rem] nav-link2  nav-font'>
-          <div className='relative '>
-            <span className='text-[#8f44fd]'>C</span>
-            <span className='absolute left-[58%] '>
-              <span className=''>E</span>
-            </span>
-          </div>
 
-          <span className='text-[#111727]'>D</span>
+
         </div>
-      </div>
+      </div> */}
 
       {/* Hamburger Icon */}
       <div className='md:hidden'>

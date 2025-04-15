@@ -58,10 +58,10 @@ export default function Homepage() {
 
         {/* Main Content */}
         <motion.h1
-          className=' lg:text-[4rem] text-3xl text-center lg:tracking-widest font-bold mb-8 relative z-20'
+          className=' big-shoulders-inline-bold lg:text-[4rem] text-3xl text-center lg:tracking-widest font-bold mb-8 relative z-20'
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ fontFamily: 'YourFont3' }}
+          // style={{ fontFamily: 'big-shoulders-inline-bold' }}
           transition={{ duration: 1 }}>
           <Typewriter
             options={{
@@ -81,7 +81,7 @@ export default function Homepage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}>
-          FullStack Web Developer 
+          FullStack Web Developer
         </motion.p>
         {/* | Foreign Exchange Trader */}
 

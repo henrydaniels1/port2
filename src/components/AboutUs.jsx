@@ -9,6 +9,7 @@ import '../style/Button.css'
 import '../style/Nav.css'
 import Earth from './Earth'
 import Earth2 from './ReactLogo'
+import '../style/Font.css'
 
 
 
@@ -93,7 +94,7 @@ export const AboutUs = () => {
                 strokeLinejoin='round'
               />
             </svg>
-            <p className=' font-semibold tracking-wider z-20  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
+            <p className=' font-semibold  tracking-wider z-20  text-teal-900 lg:text-4xl md:text-4xl text-3xl '>
               About Me
             </p>
           </div>
