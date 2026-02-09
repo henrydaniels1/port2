@@ -3,6 +3,7 @@ import a11 from '../assets/a11.png';
 import a12 from '../assets/a12.png';
 import a13 from '../assets/ChedFx.png';
 import a14 from '../assets/church11.png';
+import a15 from '../assets/real.png';
 import b1 from '../assets/vid3.mp4';
 import '../style/Fxstyle.css'
 // import ExampleComponent from '../example/Scroll';
@@ -37,9 +38,17 @@ const data = [
     imageUrl: a14,
     date: 'In Progress',
     title: 'Peace Chapel',
-    description: 'A church website',
+    description: 'A church website with dashboard',
     alt: 'peaceChapel',
     link: 'https://ched-peacechapel.vercel.app/',
+  },
+  {
+    imageUrl: a15,
+    date: 'In Progress',
+    title: 'Real estate',
+    description: 'A Real estate website with dashboard',
+    alt: 'RealEstate',
+    link: 'https://ched-real-estate.vercel.app/',
   },
 ];
 
