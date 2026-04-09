@@ -33,31 +33,31 @@
 import  { useState, useEffect } from 'react';
 import Landing1 from './components/Landing1.jsx';
 import './App.css';
-import Loader from './components/Loader2.jsx';
+// import Loader from './components/Loader2.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate a data fetching process
-    setTimeout(() => {
-      setLoading(false);
-    }, 1600);
-  }, []);
+  // useEffect(() => {
+  //   // Simulate a data fetching process
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1600);
+  // }, []);
 
   return (
     <Router>
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
+      ) : ( */}
             <div>
        
         <Routes>
            <Route path="/" element={<Landing1 />} />
         </Routes>
       </div>
-      ) }
+      {/* ) } */}
     
     </Router>
   );

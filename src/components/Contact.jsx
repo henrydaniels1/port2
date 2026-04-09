@@ -82,7 +82,7 @@ export default function Contact() {
               <img src={ad} alt='' className='w-full h-full' />
             </div>
             <address className='text-gray-400'>
-              No.23 Oke Avenue, Ibadan.
+              Ibadan, Nigeria.
             </address>
           </div>
           <div className='flex items-center space-x-2'>
