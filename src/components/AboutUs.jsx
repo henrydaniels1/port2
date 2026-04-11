@@ -115,7 +115,7 @@ export const AboutUs = () => {
             {/* <BoxRevealDemo/> */}
           </div>
 
-          <div className='reveal2'>
+          {/* <div className='reveal2'>
             <a
               style={{ '--clr': '#000' }}
               className='btn-3 px-4 py-2 rounded-2xl'
@@ -145,7 +145,7 @@ export const AboutUs = () => {
                 </svg>
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div

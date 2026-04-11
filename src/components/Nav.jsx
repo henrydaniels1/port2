@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import a13 from '/l3.png'
+import a13 from '/ched3.png'
 import '../style/Nav.css'
 
 export default function NavBar() {
@@ -17,8 +17,8 @@ export default function NavBar() {
       animate={{ opacity: 1, y: 0 }}
       transition={ { duration: 0.8 } }>
       
-      <div className='flex md:h-12 md:w-13 nav-link2 w-26 h-12 relative '>
-        <img src={a13} className=' w-full h-full ' alt='Logo' />
+      <div className='flex md:h-8 md:w-26 nav-link2 w-26 h-8 relative'>
+        <img src={a13} className=' w-full ' alt='Logo' />
       </div>
 {/* 
       <div className=''>
