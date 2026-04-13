@@ -16,7 +16,7 @@ const data = [
     title: 'CRIPTIFY',
     description: 'A Symmetric Encryption and Decryption Tool Website',
     alt: 'Criptify',
-    link: 'https://criptifyyy.vercel.app/',
+    link: 'https://criptify2.vercel.app/',
   },
   {
     imageUrl: a12,
