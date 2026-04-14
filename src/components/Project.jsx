@@ -36,7 +36,7 @@ const data = [
   },
   {
     imageUrl: a14,
-    date: 'In Progress',
+    date: 'Completed',
     title: 'Peace Chapel',
     description: 'A church website with dashboard',
     alt: 'peaceChapel',
@@ -44,7 +44,7 @@ const data = [
   },
   {
     imageUrl: a15,
-    date: 'In Progress',
+    date: 'Completed',
     title: 'Real estate',
     description: 'A Real estate website with dashboard',
     alt: 'RealEstate',
