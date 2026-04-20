@@ -4,6 +4,7 @@ import a12 from '../assets/a12.png';
 import a13 from '../assets/ChedFx.png';
 import a14 from '../assets/church11.png';
 import a15 from '../assets/real.png';
+import a16 from '../assets/upesa.png';
 import b1 from '../assets/vid3.mp4';
 import '../style/Fxstyle.css'
 // import ExampleComponent from '../example/Scroll';
@@ -49,6 +50,15 @@ const data = [
     description: 'A Real estate website with dashboard',
     alt: 'RealEstate',
     link: 'https://ched-real-estate.vercel.app/',
+  },
+  {
+    imageUrl: a16,
+    date: 'Completed',
+    title: 'Upesa',
+    description: 'Making Stablecoins more practical for everyday use',
+    alt: 'Upesa',
+    link: 'https://upesa.app/',
+    isCompanyProject: true,
   },
 ];
 
@@ -144,7 +154,7 @@ const Project = () => {
         <video src={b1} autoPlay loop muted className="w-full" />
       </div>
 
-      <div ref={sectionRef} className="w-full mx-0">
+      <div ref={sectionRef} className="w-full mx-0 space-y-16">
         <div
           id="projects"
           className={`grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-16 transition-all duration-1000 ease-out transform ${
@@ -153,7 +163,7 @@ const Project = () => {
               : 'opacity-0 translate-y-12 scale-90 rotate-3 blur-sm'
           }`}
         >
-          {data.map((item, index) => (
+          {data.filter(item => !item.isCompanyProject).map((item, index) => (
             <Card
               key={index}
               imageUrl={item.imageUrl}
@@ -162,9 +172,27 @@ const Project = () => {
               description={item.description}
               alt={item.alt}
               link={item.link}
-              parallaxOffset={index * 0.09} // Different parallax offset for each card
+              parallaxOffset={index * 0.09}
             />
           ))}
+        </div>
+
+        <div>
+          <p className="md:text-4xl text-3xl font-bold text-teal-900 text-center mb-10">Company Work</p>
+          <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-16">
+            {data.filter(item => item.isCompanyProject).map((item, index) => (
+              <Card
+                key={index}
+                imageUrl={item.imageUrl}
+                date={item.date}
+                title={item.title}
+                description={item.description}
+                alt={item.alt}
+                link={item.link}
+                parallaxOffset={index * 0.09}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
