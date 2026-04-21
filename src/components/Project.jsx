@@ -5,6 +5,7 @@ import a13 from '../assets/ChedFx.png';
 import a14 from '../assets/church11.png';
 import a15 from '../assets/real.png';
 import a16 from '../assets/upesa.png';
+import a17 from '../assets/bih.png';
 import b1 from '../assets/vid3.mp4';
 import '../style/Fxstyle.css'
 // import ExampleComponent from '../example/Scroll';
@@ -58,6 +59,15 @@ const data = [
     description: 'Making Stablecoins more practical for everyday use',
     alt: 'Upesa',
     link: 'https://upesa.app/',
+    isCompanyProject: true,
+  },
+  {
+    imageUrl: a17,
+    date: 'Completed',
+    title: 'Blockchain Innovation Hub',
+    description: '',
+    alt: 'Bih',
+    link: 'https://bih.com.ng/',
     isCompanyProject: true,
   },
 ];
